@@ -742,7 +742,7 @@ font-weight: 100;
     border-radius: 4px;
     font-weight: lighter;
     letter-spacing: 2.3px;
-    padding: 10px 13px 6px 13px;
+    line-height: 18px;
     background-color: #29373b;
     text-align: center;
     color: white;
@@ -750,6 +750,7 @@ font-weight: 100;
     margin-bottom: 15pt;
     margin-top: 0px;
   }
+
 
 
   body {
