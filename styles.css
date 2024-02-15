@@ -336,10 +336,11 @@ header ul li:hover {
   background-color: rgba(0,0,0,.5);
   color: #f2f2f2;
   font-size: 15px;
+  line-height:17px;
   padding: 8px 12px 8px 12px ;
   bottom: 8px;
   position: absolute;
-  width: 50%;
+  width: 50px;
   margin-right: auto;
   margin-left: auto; 
   text-align: center;
