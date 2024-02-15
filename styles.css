@@ -934,3 +934,12 @@ form {
     display: none;
   }
 }
+
+@media screen and (min-width: 1400px) {
+.main-gallery, .main{
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top:50px;
+
+}
+}
