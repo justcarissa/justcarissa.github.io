@@ -791,12 +791,12 @@ form {
     font-weight: normal;
     letter-spacing: 1.9px;
     padding-top: 6px;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
     text-align: center;
     color: #29373b;
     text-transform: uppercase;
-    line-height: 30px;
-    font-size: 26px;
+    line-height: 28px;
+    font-size: 24px;
   }
 
   body {
