@@ -643,6 +643,13 @@ form {
   .portfolio-header {
     border-bottom: solid 3pt #feea98;
   }
+  
+  .container {
+  border-radius: 5px;
+  border: solid 3pt #f1f1f1;
+  padding: 15px 35px 35px 35px;
+  margin-bottom: 20px;
+}
 
   .me {
     margin-top: 30px;
