@@ -339,10 +339,8 @@ header ul li:hover {
   padding: 8px 12px 8px 12px ;
   bottom: 8px;
   position: absolute;
-  width: 100%;
+  width: 50%;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 /* Number text (1/3 etc) */
