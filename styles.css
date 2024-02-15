@@ -496,7 +496,7 @@ header ul li:hover {
 
 .sub-menu li a:hover {
   background-color: #fbd25e;
-  border-radius: 5%;
+  border-radius: 5px;
   color: #29373b;
 }
 
@@ -517,7 +517,7 @@ header ul li:hover {
 
 .main-services a:hover {
   background-color: #fbd25e;
-  border-radius: 5%;
+  border-radius: 5px;
   color: #29373b;
 }
 
@@ -580,7 +580,7 @@ form .sendemail {
 
 form .sendemail:hover {
   background-color: #fbd25e;
-  border-radius: 5%;
+  border-radius: 5px;
   color: #29373b;
 }
 
@@ -640,7 +640,7 @@ form {
 
 .sent-wrap a:hover {
   background-color: #fbd25e;
-  border-radius: 5%;
+  border-radius: 5px;
   color: #29373b;
 }
 
@@ -656,7 +656,7 @@ form {
   .portfolio-header {
     border-bottom: solid 3pt #feea98;
   }
-  
+
   .container {
   border-radius: 5px;
   border: solid 3pt #f1f1f1;
@@ -964,3 +964,4 @@ form {
 
 }
 }
+
