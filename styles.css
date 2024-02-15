@@ -353,7 +353,7 @@ header ul li:hover {
 }
 
 /* The dots/bullets/indicators */
-.dot, dot2{
+.dot, .dot2{
   cursor: pointer;
   height: 15px;
   width: 15px;
