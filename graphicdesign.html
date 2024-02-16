@@ -1,979 +1,251 @@
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@import url("https://use.typekit.net/odm2npt.css");
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Body Text and Headers */
-body {
-  font-family: quasimoda, sans-serif;
-  margin: 0;
-  color: #29373b;
-}
-
-body p {
-  margin-top: 5px;
-  line-height: 1.4;
-  font-weight: lighter;
-}
-
-.main-gallery p {
-  margin-top: 5px;
-  padding-bottom: 15px;
-  margin-bottom: 35px;
-}
-
-.main-gallery h5 {
-  margin-top: 20px;
-}
-
-h5 {
-  margin-bottom: 0px;
-  font-size: 16px;
-  line-height: 1.3;
-}
-
-.bullet-header {
-  padding-bottom: 2pt;
-  padding-top: 6px;
-  font-size: 24px;
-  letter-spacing: 0.85px;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-.bullet-header-1 {
-  padding-bottom: 2pt;
-  padding-top: 0px;
-  font-size: 24px;
-  letter-spacing: 0.85px;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-.bullets li {
-  padding-bottom: 8px;
-  line-height: 1.1;
-}
-
-.bullets {
-  margin-top: 5px;
-  padding-left: 28px;
-}
-
-h2 {
-  border-top: solid 3px #feea98;
-  border-bottom: solid 3px #feea98;
-  margin-bottom: 45px;
-  font-weight: normal;
-  letter-spacing: 2.1px;
-  text-align: center;
-  color: #29373b;
-  text-transform: uppercase;
-  line-height: 36px;
-  font-size: 32px;
-  padding-top: 8px;
-}
-
-
-
-h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-p.thick {
-  font-weight: bold;
-  display: inline;
-}
-
-/* Header/logo Title */
-header {
-  height: 210px;
-  border-bottom: solid 3pt #feea98;
-  background-color: #29373b;
-  display: flex;
-  z-index: 9
-}
-
-.portfolio-header {
-  border-bottom: none;
-}
-
-.header-container {
-  padding-top: 40px;
-}
-
-#logo {
-  height: 70px;
-  padding-left: 30px;
-  width: auto;
-  display: flex;
-}
-
-/* Nav Bar*/
-.navbar {
-  padding-left: 2px;
-  margin-top: 55px;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  text-align: left;
-}
-
-header ul a {
-  color: #feea98;
-  text-decoration: none;
-  letter-spacing: 1.3px;
-  line-height: 1.3;
-}
-
-header ul li {
-  padding-right: 40px;
-}
-
-header ul li:hover {
-  transform: scale(1.1);
-  transition: 0.2s;
-}
-
-.selected a {
-  color: white;
-  font-weight: 600;
-}
-
-.selected:hover {
-  transform: scale(1);
-  transition: 0s;
-}
-
-/* Column containers (ABOUT PAGE)*/
-.row {
-  display: flex;
-}
-
-.page-intro {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.top-intro {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 40px 40px 20px 40px;
-}
-
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 40px 40px 20px 40px;
-}
-
-.main {
-  flex: 70%;
-  background-color: white;
-  padding: 25px 60px 20px 60px;
-  margin-top: 0px;
-  z-index: 0px;
-}
-
-.main-gallery {
-  flex: 70%;
-  background-color: white;
-  padding: 25px 60px 20px 60px;
-  margin-top: 0px;
-  z-index: 0px;
-}
-
-.main-services {
-  flex: 70%;
-  background-color: white;
-  padding: 25px 40px 20px 40px;
-  margin-top: 0px;
-  z-index: 0px;
-}
-
-.section-container {
-max-width: 90%;
-margin-left: auto;
-margin-right: auto;
-
-}
-/* Images*/
-.me {
-  margin-top: 60px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-  border-radius: 50%;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.side img {}
-
-.main img {
-  width: 100%;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.graphicdesign-img {
-  border-radius: 4px;
-  width: 100%;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.scrollable-image {
-  width: 100%;
-  overflow-x: scroll;
-  white-space: nowrap;
-  position: relative;
-}
-
-.scrollable-image::-webkit-scrollbar {
-  height: 14px;
-}
-
-.scrollable-image::-webkit-scrollbar-thumb {
-  background-color: #feea98;
-  /* Change the color of the thumb */
-  border-radius: 6px;
-  /* Add rounded corners to the thumb */
-}
-
-.scrollable-image::-webkit-scrollbar-track {
-  background-color: #29373b;
-  /* Change the color of the track */
-}
-
-.scrollable-image img {
-  max-width: 700%;
-}
-
-.vertical-scrollable-image {
-  height: 700px;
-  overflow-y: scroll;
-  white-space: nowrap;
-  position: relative;
-  resize: vertical;
-  z-index: 0;
-}
-
-.vertical-scrollable-image::-webkit-scrollbar {
-  width: 14px;
-  /* Change the width of the scrollbar */
-}
-
-.vertical-scrollable-image::-webkit-scrollbar-thumb {
-  background-color: #feea98;
-  /* Change the color of the thumb */
-  border-radius: 6px;
-}
-
-.vertical-scrollable-image::-webkit-scrollbar-track {
-  background-color: #29373b;
-}
-
-.vertical-scrollable-image img {
-  width: 100%;
-}
-
-.scrollable-image-container {
-  width: 100%;
-  border-radius: 4px;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Image Slide-SHow66666666666666666666666666666*/
-.mySlides {
-  display: none
-}
-
-.mySlides2 {
-  display: none
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
- text-shadow: 5px 5px 10px black;
-  color: #f2f2f2;
-  font-size: 15px;
-  line-height:17px;
-  padding: 8px 12px 8px 12px ;
-  bottom: 5px;
-  position: absolute;
-  width: 100%;
-  margin-right: 20px;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-background-color: rgba(255,255,255,0.5);
-  color:  #29373b;
-  font-size: 12px;
-  padding: 6px 10px;
-  position: absolute;
-  top: 0;
-
-
-}
-
-/* The dots/bullets/indicators */
-.dot, .dot2{
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-
-.active, .dot2:hover {
-  background-color: #717171;
-}
-
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next, .text {
-    font-size: 11px
-  }
-}
-
-/* Footer and Social Bar */
-.footer {
-  padding: 20px;
-  background: #29373b;
-  text-align: center;
-}
-
-.footer p {
-  padding-top: 40px;
-  color: white;
-  text-align: center;
-  font-weight: lighter;
-}
-
-.socials {
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.socials ul {
-  list-style: none;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.socials .fa {
-  margin: 0 20px;
-  padding: 10px;
-  font-size: 16px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  text-decoration: none;
-  border-radius: 20%;
-  background: #feea98;
-  color: #29373b;
-}
-
-.fa:hover {
-  background-color: #fbd25e;
-}
-
-/* Gallery */
-/*Section buttons for Portfolio */
-.sections {
-  background-color: #29373b;
-  padding: 5px 10px 5px 0px;
-  width: 100%;
-  z-index: 10;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.fixed-sections {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.fixed-sections.active {
-  display: block;
-}
-
-.sub-menu {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.sub-menu li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 30px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  line-height: 40px;
-}
-
-.sub-menu a {
-  background-color: #feea98;
-  text-decoration: none;
-  color: #29373b;
-  font-weight: bold;
-  padding: 10px;
-  border: solid 3px #fbd25e;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 13.5px;
-  letter-spacing: 0.7px;
-}
-
-.sub-menu li a:hover {
-  background-color: #fbd25e;
-  border-radius: 5px;
-  color: #29373b;
-}
-
-/* Download PDF Button for Services */
-.main-services a {
-  padding-top: 60px;
-  background-color: #feea98;
-  text-decoration: none;
-  color: #29373b;
-  font-weight: bold;
-  padding: 10px;
-  border: solid 3px #fbd25e;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.7px;
-}
-
-.main-services a:hover {
-  background-color: #fbd25e;
-  border-radius: 5px;
-  color: #29373b;
-}
-
-.main-gallery a {
-  padding-top: 60px;
-  background-color: #feea98;
-  text-decoration: none;
-  color: #29373b;
-  font-weight: bold;
-  padding: 10px;
-  border: solid 3px #fbd25e;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.7px;
-}
-
-.main-gallery a:hover {
-  background-color: #fbd25e;
-  border-radius: 5%;
-  color: #29373b;
-}
-
-/* contact form*/
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  margin-bottom: 25px;
-  resize: vertical;
-}
-
-input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  margin-bottom: 25px;
-  resize: vertical;
-}
-
-form .sendemail {
-  padding-top: 60px;
-  background-color: #feea98;
-  text-decoration: none;
-  color: #29373b;
-  font-weight: bold;
-  padding: 10px;
-  border: solid 3px #fbd25e;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.7px;
-}
-
-form .sendemail:hover {
-  background-color: #fbd25e;
-  border-radius: 5px;
-  color: #29373b;
-}
-
-form {
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  padding: 35px;
-  margin-bottom: 20px;
-}
-
-.container {
-  border-radius: 5px;
-  border: solid 3pt #f1f1f1;
-  padding: 35px;
-  margin-bottom: 20px;
-}
-
-.sent-wrap {
-  padding-bottom: 100px;
-  padding-left: 50px;
-  padding-top: 50px;
-}
-
-.sent-wrap h1 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #feea98;
-  font-weight: lighter;
-  font-size: 36px;
-  line-height: 34px;
-  letter-spacing: 0.8;
-}
-
-.sent-wrap p {
-  color: white;
-  letter-spacing: 0.5px;
-  font-weight: 100;
-}
-
-.sent-container {
-  background-color: #29373b;
-}
-
-.sent-wrap a {
-  padding-top: 60px;
-  background-color: #feea98;
-  text-decoration: none;
-  color: #29373b;
-  font-weight: bold;
-  padding: 10px;
-  border: solid 3px #fbd25e;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 0.7px;
-}
-
-.sent-wrap a:hover {
-  background-color: #fbd25e;
-  border-radius: 5px;
-  color: #29373b;
-}
-
-/* Media query for responsive sections */
-@media screen and (max-width: 600px) {
-
-  /* Header/logo Title */
-  header {
-    height: 110px;
-    border-bottom: solid 3pt #feea98;
-  }
-
-  .portfolio-header {
-    border-bottom: solid 3pt #feea98;
-  }
-
-  .container {
-  border-radius: 5px;
-  border: solid 3pt #f1f1f1;
-  padding: 15px 35px 35px 35px;
-  margin-bottom: 20px;
-}
-
-  .me {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    border-radius: 50%;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .header-container {
-    padding-left: 3px;
-    padding-right: 25px;
-    padding-top: 30px;
-  }
-
-  #logo {
-    height: 45px;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  /* Mobile Menu */
-  .mobile-menu-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #hamburger-icon {
-    display: block;
-    position: absolute;
-    top: 35px;
-    right: 0px;
-    cursor: pointer;
-    z-index: 20;
-  }
-
-  #hamburger-icon div {
-    width: 35px;
-    height: 3px;
-    background-color: #feea98;
-    margin: 6px 40px;
-    transition: 0.4s;
-  }
-
-  .open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
-  }
-
-  .open .bar2 {
-    opacity: 0;
-  }
-
-  .open .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
-  }
-
-  .open .mobile-menu {
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    display: none;
-    position: absolute;
-    top: 0px;
-    padding-top: 40px;
-    left: 0;
-    height: calc(50vh - 50px);
-    width: 100%;
-    background-color: #29373b;
-    z-index: 10;
-  }
-
-  .mobile-menu.active {
-    display: flex;
-  }
-
-  .mobile-menu li {
-    margin-bottom: 30px;
-    display: inline-block;
-  }
-
-  /* Column containers */
-  .side {
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 30px;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .main {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .main-gallery {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .page-intro {
-    flex-direction: column;
-  }
-
-  #parent {
-    display: flex;
-    flex-flow: column;
-  }
-
-  #a {
-    order: 2;
-    z-index: 9;
-  }
-
-  #b {
-    order: 1;
-  }
-
-  .top-intro {
-    display: none;
-  }
-
-  /* Sections Button and Sub-menu*/
-  .sections {
-    box-shadow: none;
-    background-color: #feea98;
-  }
-
-  h2 {
-    border-top: solid 3px #feea98;
-    border-bottom: solid 3px #feea98;
-    font-weight: normal;
-    letter-spacing: 1.9px;
-    padding-top: 6px;
-    padding-bottom:9px;
-    text-align: center;
-    color: #29373b;
-    text-transform: uppercase;
-    line-height: 28px;
-    font-size: 24px;
-  }
-
-  body {
-    font-size: 11pt;
-  }
-
-  .sections-button {
-    margin-top: 6px;
-    display: block;
-    color: #29373b;
-    font-weight: bolder;
-    background-color: #feea98;
-    border-radius: 5px;
-    border: solid 3px #fbd25e;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    text-align: left;
-    position: relative;
-  }
-
-  .sub-menu {
-    list-style: none;
-    display: none;
-    background-color: #29373b;
-    position: absolute;
-    border-radius: 5px;
-    top: 485px;
-    left: 0px;
-    z-index: 4;
-    padding: 10px;
-    border-top: none;
-    flex-direction: column;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .sub-menu.active {
-    position: static;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sub-menu li {
-    margin: 0;
-    padding: 8px;
-    text-align: left;
-  }
-
-  .sub-menu a {
-    display: flex;
-    background-color: #feea98;
-    color: #29373b;
-    font-weight: bold;
-    line-height: normal;
-  }
-
-  .sub-menu li a:hover {}
-
-  .sections {
-    z-index: 0;
-    display: flex;
-    background-color: white;
-    padding-left: 30pt;
-    padding-right: 30pt;
-    flex-direction: column;
-  }
-
-  .sections-button::after {
-    content: "▼";
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%) rotate(0deg);
-    /* Start with no rotation */
-    transition: transform 0.2s;
-    /* Add a smooth transition effect */
-  }
-
-  .sections-button:hover {
-    background-color: #fbd25e
-      /* Add a smooth transition effect */
-  }
-
-  .sections-button.active::after {
-    transform: translateY(-50%) rotate(180deg);
-    /* Rotate when the "active" class is present */
-  }
-
-  /* Footer and Socail Bar*/
-  .socials .fa {
-    margin: 0 10px;
-  }
-
-  .scrollable-image-container {
-    border: none;
-  }
-
-  .graphicdesign-img {
-    border: none;
-  }
-
-  .bullet-header {
-    padding-bottom: 0pt;
-    padding-top: 6px;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-
-  .bullet-header-1 {
-    padding-bottom: 0pt;
-    padding-top: 6px;
-    font-size: 20px;
-    line-height: 1.2;
-  }
-
-  .bullets {
-    margin-top: 8px;
-    padding-left: 16px;
-  }
-  .section-container {
-  max-width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-
-  }
-}
-
-@media screen and (min-width: 601px) {
-  .sections-button {
-    display: none;
-  }
-
-  .submenu {
-    display: none;
-  }
-
-  .mobile-menu-container {
-    display: none;
-  }
-
-  #b {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-.main-gallery, .main{
-  padding-left: 110px;
-  padding-right: 110px;
-  padding-top:50px;
-
-}
-}
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Design</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header id="main-header">
+    <div class="header-container">
+      <img id="logo" src="homeimages\logo.png" alt="logo.png" />
+
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">ABOUT</a></li>
+          <li class="selected"><a href="graphicdesign.html">PORTFOLIO</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="form.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Container for the hamburger menu -->
+    <div class="mobile-menu-container">
+      <nav id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <ul class="mobile-menu">
+        <li><a href="index.html">ABOUT</a></li>
+        <li class="selected"><a href="graphicdesign.html">PORTFOLIO</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="form.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Sections and Intro -->
+
+  <div id="parent" class="parent">
+
+    <div id="a" class="sections fixed-sections">
+      <button class="sections-button">Sections</button>
+      <ul class="sub-menu">
+        <li><a href="#section1">Infographics</a></li>
+        <li><a href="#section2">Printed Collateral</a></li>
+        <li><a href="#section3">Brand Design</a></li>
+        <li><a href="#section4">Package Designs</a></li>
+        <li><a href="#section5">Illustration Design</a></li>
+        <li><a href="#section6">UX Design</a></li>
+      </ul>
+    </div>
+
+    <div id="b" class="page-intro">
+      <div class="side">
+        <h3 class="bullet-header-1">Portfolio</h3>
+        <p>Welcome to my design portfolio where you can browse through the various types of design I specialize in. Here you will find captivating infographics, persuasive brochures, memorable logos, eye-catching package designs, intuitive web
+          designs, original
+          illustrations, and custom designed books. All of my work is created using Adobe Illustrator, InDesign, and Photoshop.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery (content) -->
+
+  <div class="row">
+    <div class="top-intro">
+      <h3 class="bullet-header-1">Portfolio</h3>
+      <p>Welcome to my design portfolio where you can browse through the various types of design I specialize in. Here you will find captivating infographics, persuasive brochures, memorable logos, eye-catching package designs, intuitive web designs,
+        original
+        illustrations, and custom designed books. All of my work is created using Adobe Illustrator, InDesign, and Photoshop.</p>
+    </div>
+
+    <div class="main-gallery">
+      <section id="section1">
+        <h2>Infographics</h2>
+
+        <div class="section-container">
+
+          <img src="graphic design work\lighting.jpg" class="graphicdesign-img" alt="lighting.jpg">
+          <h5>History of Lighting, Adobe Illustrator</h5>
+          <p>A timeline infographic with original drawings, illustrating the history and development of lighting over 220 years.</p>
+          <br>
+
+          <div class="scrollable-image-container">
+            <div class="vertical-scrollable-image">
+              <img src="graphic design work\sleep.jpg" alt="sleep.jpg">
+            </div>
+          </div>
+          <h5>Get Your Sleep, Adobe Illustrator</h5>
+          <p>An informational infographic explaining sleep and how it affects the body and physiology. Includes an anatomical drawing of the brain, sleep mechanisms, and guidance on how much sleep is enough. Feel free to scroll through this
+            infographic.</p>
+          <br>
+
+          <div class="scrollable-image-container">
+            <div class="scrollable-image">
+              <img src="graphic design work\herbgarden.jpg" alt="herbgarden.jpg">
+            </div>
+          </div>
+          <h5>How to Start an Indoor Herb Garden, Adobe Illustrator</h5>
+          <p>A versatile process infographic designed for digital or print use as an accordion booklet. Combining clear illustrations with concise steps, it offers an engaging and informative guide, suitable for both screen and hand-held viewing.
+            Scroll horizontally to see each page.</p>
+          <br>
+        </div>
+
+      </section>
+
+      <section id="section2">
+        <h2>Printed Collateral</h2>
+        <img src="graphic design work\coronavirus.png" class="graphicdesign-img" alt="coronavirus.png">
+        <h5>Covide-PSA, Adobe Illustrator</h5>
+        <p>An informative PSA infographic suitable for digital display, print as a flyer, or poster. Featuring graphs, charts, simple facts, and illustrations, offering a visually engaging presentation of critical information.</p>
+        <br>
+
+        <img src="graphic design work\map.png" class="graphicdesign-img" alt="map.png">
+        <h5>Cuyahoga Valley National Park Brochure, Adobe Photoshop and Illustrator</h5>
+        <p>A tri-fold brochure for Cuyahoga Valley National Park featuring an illustrated map of the park, original photos, informative background information, and highlights of the park's features.</p>
+        <br>
+
+
+        <img src="graphic design work\menu.png" class="graphicdesign-img" alt="menu.png">
+        <h5>Gelato Grotto Menu, Adobe Illustrator</h5>
+        <p>A custom gelato menu designed for an imaginary restaurant named Gelato Grotto. Custom illustrations were made using Adobe Illustrator.</p>
+        <br>
+
+        <a href="graphic design work\CMRI_sample.pdf" download="CMRI_sample.pdf">Cardiovascular Magnetic Resonance</a>
+        <h5>Cardiovascular Magnetic Resonance Book, Adobe Indesign, Illustrator, and Photoshop</h5>
+        <p>Designed a 100-page Cardiovascular Magnetic Resonance book, enriched with infographics and tables, to facilitate training for new personnel. I linked a sample of the first few sections of the book above.</p>
+        <br>
+      </section>
+
+      <section id="section3">
+        <h2>Brand Design</h2>
+        <div class="scrollable-image-container">
+          <div class="vertical-scrollable-image">
+            <img src="graphic design work\splendid.png" alt="splendid.png">
+          </div>
+        </div>
+        <h5>Splendid Smoothies Product Extension, Adobe Illustrator and Adobe Dimensions </h5>
+        <p>A mockup of a brand extension logo and package design for Yoplait, including a color guide, custom font, as well as 3D examples of how the packaging would look.</p>
+        <br>
+
+
+        <img src="graphic design work\jht-final-logos.png" class="graphicdesign-img" alt="jht-final-logos.png">
+        <h5>Just Health Technologies Logo Design, Adobe Illustrator</h5>
+        <p>A logo design created for a client's startup company, which includes a color palette and variations of how the logo would be displayed. Additionally, I have included an example of the logo that the client had embroidered onto a hat.</p>
+        <br>
+
+
+        <img src="graphic design work\stationary.jpg" class="graphicdesign-img" alt="stationary.jpg">
+        <h5>Carissa's Creations Stationary, Adobe Illustrator and Adobe Photoshop</h5>
+        <p>Custom stationery mockups designed for my own brand, Carissa's Creations, including a newsletter, envelope, business card, pencils, and folder.</p>
+        <br>
+
+      </section>
+
+      <section id="section4">
+        <h2>Package Design</h2>
+        <img src="graphic design work\tea.jpg" class="graphicdesign-img" alt="tea.jpg">
+        <h5>Tea Packaging, Adobe Illustrator and Photoshop</h5>
+        <p>A tea packaging design featuring three flavor prototypes, including custom tea bags with tags, boxes, and a large container with a matching mug. It was photographed and edited in Photoshop to showcase how it would appear on a shelf.</p>
+        <br>
+
+        <img src="graphic design work\candy.jpg" class="graphicdesign-img" alt="candy.jpg">
+        <h5>Candy Packaging, Adobe Illustrator and Photoshop</h5>
+        <p>A tea packaging design featuring three flavor prototypes, including custom tea bags with tags, boxes, and a large container with a matching mug. It was photographed and edited in Photoshop to showcase how it would appear on a shelf.</p>
+        <br>
+
+        <img src="graphic design work\salsapackage.png" class="graphicdesign-img" alt="salsapackage.png">
+        <h5>Salsa Packaging, Adobe Illustrator and Photoshop</h5>
+        <p>A salsa packaging design featuring three flavor prototypes. It was photographed and edited in Photoshop to showcase how it would appear on a shelf.</p>
+        <br>
+
+      </section>
+
+
+      <section id="section5">
+        <h2>Illustration Design</h2>
+        <img src="graphic design work\goose.gif" class="graphicdesign-img" alt="goose.gif">
+        <h5>Goose GIF, Adobe Photoshop</h5>
+        <p>An animated GIF of a flying goose drawn in Photoshop and put on a loop.</p>
+        <br>
+
+        <img src="graphic design work\heart.jpg" class="graphicdesign-img" alt="heart.jpg">
+        <h5>Heart Chart, Adobe Illustrator</h5>
+        <p>An anotomically correct and labeled diagram of the human heart. It was made for a CMRI book I was contracted to design for the CLE Clinic (full book will be linked soon).</p>
+        <br>
+
+
+        <img src="graphic design work\pixelart_forest.jpg" class="graphicdesign-img" alt="pixelart_forest.jpg">
+        <h5>Pixel Art Forest, Procreate</h5>
+        <p>A fun passion project of a forest drawn in Procreate.</p>
+        <br>
+
+        <img src="graphic design work\swamp.jpg" class="graphicdesign-img" alt="swamp.jpg">
+        <h5>Swamp Drawing, Procreate</h5>
+        <p>A digital illustration of a swamp using various brushes and effects..</p>
+        <br>
+
+      </section>
+
+      <section id="section6">
+        <h2>UX Design</h2>
+        <a href="https://xd.adobe.com/view/cff8d239-6d63-4b49-97ac-5724106d5dd3-9aab/?fullscreen">Cleveland Menu Comp</a>
+        <h5>Cleveland Menu Dashboard Comps, Adobe XD and Illustrator</h5>
+        <p>creating interactive website prototypes for Menu-Maker using tools like Adobe XD, Illustrator, and Figma. By enhancing the user experience, I contributed to increased productivity and efficiency for the company.</p>
+        <br>
+        <a href="https://xd.adobe.com/view/a8881009-1900-4a72-b4f8-84de8ffa6afa-fddb/">Gas Station Kiosk</a>
+        <h5>Gas Station Kiosk, Adove XD</h5>
+        <p>A prototype for a gas station kiosk. It is user-friendly, simple to navgigate, and provides the user with various payment options, including Apple Pay.</p>
+        <br>
+
+
+      </section>
+
+
+
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="socials">
+      <ul class="icons">
+        <li><a href="https://carissacancreate.etsy.com" class="fa fa-etsy"></a></li>
+        <li><a href="https://www.instagram.com/jcarissaj/?hl=en" class="fa fa-instagram"></a></li>
+        <li><a href="https://goo.gl/maps/Eb9kHn2WzVMDZjh26" class="fa fa-google"></a></li>
+        <li><a href="https://www.linkedin.com/in/carissajust" class="fa fa-linkedin"></a></li>
+        <li><a href="https://www.pinterest.com/carissarjust/_saved/" class="fa fa-pinterest"></a></li>
+      </ul>
+    </div>
+    <p>2023 Carissa's Creations&copy</p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
