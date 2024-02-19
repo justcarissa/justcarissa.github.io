@@ -937,6 +937,11 @@ form {
   .section-container {
   max-width: 100%;
   }
+  
+  
+.main-gallery h5 {
+  padding-top: 2.5px;
+}
 }
 
 @media screen and (min-width: 601px) {
