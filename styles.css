@@ -527,7 +527,7 @@ background-color: rgba(255,255,255,0.5);
   color: #29373b;
 }
 
-.portfolio-button {
+.main-gallery {
 padding-top: 60px;
 padding-bottom: 15px;
   margin-bottom: 10px;
@@ -543,9 +543,9 @@ padding-bottom: 15px;
   letter-spacing: 0.7px;
 }
 
-.portfolio-button a:hover{
+.main-gallery a:hover{
     background-color: #fbd25e;
-  border-radius: 5%;
+  border-radius: 5px;
   color: #29373b;
 }
 
