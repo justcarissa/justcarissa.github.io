@@ -38,30 +38,30 @@ h5 {
 }
 
 .bullet-header {
-  padding-bottom: 2pt;
+  padding-bottom: 4pt;
   padding-top: 6px;
   font-size: 24px;
   letter-spacing: 0.85px;
-  text-transform: uppercase;
-  font-weight: bolder;
+  text-decoration: underline;
+  font-weight: lighter;
 }
 
 .bullet-header-1 {
-  padding-bottom: 2pt;
+  padding-bottom: 4pt;
   padding-top: 0px;
   font-size: 24px;
   letter-spacing: 0.85px;
-  text-transform: uppercase;
-  font-weight: bolder;
+  text-decoration: underline;
+  font-weight: lighter;
 }
 
 .bullets li {
-  padding-bottom: 8px;
+  padding-bottom: 5px;
   line-height: 1.1;
 }
 
 .bullets {
-  margin-top: 5px;
+  margin-top: 10px;
   padding-left: 28px;
 }
 
@@ -937,8 +937,8 @@ form {
   .section-container {
   max-width: 100%;
   }
-  
-  
+
+
 .main-gallery h5 {
   padding-top: 2.5px;
 }
