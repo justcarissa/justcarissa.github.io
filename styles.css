@@ -509,6 +509,7 @@ background-color: rgba(255,255,255,0.5);
 /* Download PDF Button for Services */
 .main-services a {
   padding-top: 60px;
+  padding-bottom: 10px;
   background-color: #feea98;
   text-decoration: none;
   color: #29373b;
