@@ -28,7 +28,7 @@ body p {
 }
 
 .main-gallery h5 {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 h5 {
@@ -529,8 +529,7 @@ background-color: rgba(255,255,255,0.5);
 }
 
 .main-gallery a {
-margin-top: 60px;
-padding-bottom: 30px;
+  margin-top: 60px;
   background-color: #feea98;
   text-decoration: none;
   color: #29373b;
@@ -544,7 +543,7 @@ padding-bottom: 30px;
 }
 
 .main-gallery a:hover{
-    background-color: #fbd25e;
+  background-color: #fbd25e;
   border-radius: 5px;
   color: #29373b;
 }
