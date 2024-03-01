@@ -65,7 +65,6 @@ h5 {
   padding-left: 28px;
 }
 
-
 h2 {
   border-top: solid 3px #feea98;
   border-bottom: solid 3px #feea98;
@@ -79,10 +78,6 @@ h2 {
   font-size: 32px;
   padding-top: 8px;
 }
-
-
-
-
 
 h3 {
   margin-top: 0px;
@@ -204,10 +199,11 @@ header ul li:hover {
 }
 
 .section-container {
-max-width: 90%;
-margin-left: auto;
-margin-right: auto;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 /* Images*/
 .me {
   margin-top: 60px;
@@ -338,11 +334,11 @@ margin-right: auto;
 
 /* Caption text */
 .text {
- text-shadow: 5px 5px 10px black;
+  text-shadow: 5px 5px 10px black;
   color: #f2f2f2;
   font-size: 15px;
-  line-height:17px;
-  padding: 8px 12px 8px 12px ;
+  line-height: 17px;
+  padding: 8px 12px 8px 12px;
   bottom: 5px;
   position: absolute;
   width: 100%;
@@ -352,8 +348,8 @@ margin-right: auto;
 
 /* Number text (1/3 etc) */
 .numbertext {
-background-color: rgba(255,255,255,0.5);
-  color:  #29373b;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #29373b;
   font-size: 12px;
   padding: 6px 10px;
   position: absolute;
@@ -361,7 +357,7 @@ background-color: rgba(255,255,255,0.5);
 }
 
 /* The dots/bullets/indicators */
-.dot, .dot2{
+.dot, .dot2 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -376,11 +372,9 @@ background-color: rgba(255,255,255,0.5);
   background-color: #717171;
 }
 
-
 .active, .dot2:hover {
   background-color: #717171;
 }
-
 
 /* Fading animation */
 .fade {
@@ -542,7 +536,7 @@ background-color: rgba(255,255,255,0.5);
   letter-spacing: 0.7px;
 }
 
-.main-gallery a:hover{
+.main-gallery a:hover {
   background-color: #fbd25e;
   border-radius: 5px;
   color: #29373b;
@@ -665,11 +659,11 @@ form {
   }
 
   .container {
-  border-radius: 5px;
-  border: solid 3pt #f1f1f1;
-  padding: 15px 35px 35px 35px;
-  margin-bottom: 20px;
-}
+    border-radius: 5px;
+    border: solid 3pt #f1f1f1;
+    padding: 15px 35px 35px 35px;
+    margin-bottom: 20px;
+  }
 
   .me {
     margin-top: 30px;
@@ -695,15 +689,14 @@ form {
   .navbar {
     display: none;
   }
-  
-  
-.main {
-  padding: 25px 40px 20px 40px;
-}
 
-.main-gallery {
-  padding: 25px 40px 20px 40px;
-}
+  .main {
+    padding: 25px 40px 20px 40px;
+  }
+
+  .main-gallery {
+    padding: 25px 40px 20px 40px;
+  }
 
   /* Mobile Menu */
   .mobile-menu-container {
@@ -783,7 +776,6 @@ form {
     flex-direction: column;
   }
 
-
   .page-intro {
     flex-direction: column;
   }
@@ -818,7 +810,7 @@ form {
     font-weight: normal;
     letter-spacing: 1.9px;
     padding-top: 6px;
-    padding-bottom:9px;
+    padding-bottom: 9px;
     text-align: center;
     color: #29373b;
     text-transform: uppercase;
@@ -848,20 +840,16 @@ form {
   .sub-menu {
     list-style: none;
     display: none;
-    background-color: #29373b;
-    position: absolute;
-    border-radius: 5px;
-    top: 485px;
-    left: 0px;
-    z-index: 4;
+    background-color: #feea98;
     padding: 10px;
-    border-top: none;
-    flex-direction: column;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
   }
 
   .sub-menu.active {
-    position: static;
     display: flex;
     flex-direction: column;
   }
@@ -873,11 +861,17 @@ form {
   }
 
   .sub-menu a {
-    display: flex;
-    background-color: #feea98;
+    display: block;
+    padding: 8px;
     color: #29373b;
+    /* Adjust text color */
+    text-decoration: none;
     font-weight: bold;
-    line-height: normal;
+  }
+
+  .sub-menu a:hover {
+    background-color: #fbd25e;
+    border-radius: 5px;
   }
 
   .sub-menu li a:hover {}
@@ -943,14 +937,14 @@ form {
     margin-top: 8px;
     padding-left: 22px;
   }
+
   .section-container {
-  max-width: 100%;
+    max-width: 100%;
   }
 
-
-.main-gallery h5 {
-  padding-top: 2.5px;
-}
+  .main-gallery h5 {
+    padding-top: 2.5px;
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -972,11 +966,9 @@ form {
 }
 
 @media screen and (min-width: 1400px) {
-.main-gallery, .main{
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top:50px;
-
+  .main-gallery, .main {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+  }
 }
-}
-
