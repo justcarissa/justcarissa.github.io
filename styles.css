@@ -695,6 +695,11 @@ form {
   .navbar {
     display: none;
   }
+  
+  
+.main {
+  padding: 25px 40px 20px 40px;
+}
 
   /* Mobile Menu */
   .mobile-menu-container {
