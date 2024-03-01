@@ -701,6 +701,10 @@ form {
   padding: 25px 40px 20px 40px;
 }
 
+.main-gallery {
+  padding: 25px 40px 20px 40px;
+}
+
   /* Mobile Menu */
   .mobile-menu-container {
     display: flex;
