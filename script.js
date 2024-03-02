@@ -1,3 +1,9 @@
+function toggleMobileMenu(icon) {
+  icon.classList.toggle("open");
+  var mobileMenu = document.querySelector(".mobile-menu");
+  mobileMenu.classList.toggle("active");
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const sectionsButton = document.querySelector(".sections-button");
     const subMenu = document.querySelector(".sub-menu");
@@ -7,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
         sectionsButton.classList.toggle("active");
     });
 
-    // Close the menu when clicking outside of it
     document.addEventListener("click", function(event) {
         if (!subMenu.contains(event.target) && !sectionsButton.contains(event.target)) {
             subMenu.classList.remove("active");
@@ -37,9 +42,7 @@ function handleScroll() {
   }
 }
 
-// Call the function on page load
 handleScroll();
 
-// Attach the same function to the scroll event
 window.addEventListener('scroll', handleScroll);
-// SLIDE
+
