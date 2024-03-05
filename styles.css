@@ -223,6 +223,7 @@ header ul li:hover {
 }
 
 .graphicdesign-img {
+  border-radius: 4px;
   width: 100%;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -270,6 +271,7 @@ header ul li:hover {
 
 .vertical-scrollable-image::-webkit-scrollbar-thumb {
   background-color: #feea98;
+  /* Change the color of the thumb */
   border-radius: 6px;
 }
 
@@ -283,6 +285,7 @@ header ul li:hover {
 
 .scrollable-image-container {
   width: 100%;
+  border-radius: 4px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -815,6 +818,7 @@ form {
     font-size: 24px;
   }
 
+
   body {
     font-size: 11pt;
   }
@@ -962,8 +966,22 @@ form {
 
 @media screen and (min-width: 1400px) {
   .main-gallery, .main {
-    padding-left: 180px;
-    padding-right: 180px;
+    padding-left: 185px;
+    padding-right: 185px;
     padding-top: 50px;
+  }
+
+  .side {
+        padding-top: 50px;
+  }
+
+  .contact{
+        margin-bottom: 50px;
+
+  }
+
+.main-services{
+        margin-bottom: 50px;
+
   }
 }
