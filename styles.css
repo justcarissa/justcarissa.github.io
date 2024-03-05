@@ -962,8 +962,8 @@ form {
 
 @media screen and (min-width: 1400px) {
   .main-gallery, .main {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 180px;
+    padding-right: 180px;
     padding-top: 50px;
   }
 }
