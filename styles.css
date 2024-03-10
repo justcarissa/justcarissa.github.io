@@ -1125,23 +1125,31 @@ form {
                 }
               }
 
-/* Large Screen Special Queries */
-    @media screen and (min-width: 1400px) {
-      .main-gallery, .main {
-        padding-left: 185px;
-        padding-right: 185px;
-        padding-top: 50px;
-      }
+              /* Large Screen Special Queries */
+              @media screen and (min-width: 1400px) {
+                .main-gallery, .main {
+                  padding-left: 185px;
+                  padding-right: 185px;
+                  padding-top: 50px;
+                }
 
-      .side {
-        padding-top: 50px;
-      }
+                .side p {
+                  font-size: 15px;
+                }
 
-      .contact {
-        margin-bottom: 50px;
-      }
+                body p {
+                  font-size: 15px;
+                }
 
-      .main-services {
-        margin-bottom: 50px;
-      }
-    }
+                .side {
+                  padding-top: 50px;
+                }
+
+                .contact {
+                  margin-bottom: 50px;
+                }
+
+                .main-services {
+                  margin-bottom: 50px;
+                }
+              }
