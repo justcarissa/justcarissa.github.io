@@ -3,6 +3,7 @@ function toggleMobileMenu(icon) {
   var mobileMenu = document.querySelector(".mobile-menu");
   mobileMenu.classList.toggle("active");
 }
+
 document.addEventListener("DOMContentLoaded", function() {
   const hideArrow = document.getElementById('hideArrow');
   const openArrow = document.getElementById('openArrow');
@@ -50,6 +51,10 @@ document.addEventListener("DOMContentLoaded", function() {
   submenuLinks.forEach(link => {
     link.addEventListener('click', closeSubMenu);
   });
+
+  // Call handleScroll function on DOMContentLoaded and when scrolling
+  handleScroll();
+  window.addEventListener('scroll', handleScroll);
 });
 
 // Function to handle scroll
@@ -67,7 +72,3 @@ function handleScroll() {
     buttonContainer.classList.remove('fixed-button-container');
   }
 }
-
-// Call handleScroll function when scrolling
-window.addEventListener('scroll', handleScroll);
-
