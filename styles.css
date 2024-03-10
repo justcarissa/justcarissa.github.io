@@ -35,7 +35,7 @@ header {
 
             #logo {
               height: 45px;
-                  padding-left: 0px;
+              padding-left: 0px;
             }
 
         }
@@ -113,7 +113,7 @@ header {
               margin-bottom: 40px;
               display: inline-block;
             }
-            
+
             .mobile-menu li a {
              font-size: 16px;
             }
@@ -369,7 +369,7 @@ header {
                 padding-top: 30px;
                 padding-left: 30px;
                 padding-right: 30px;
-                padding-bottom: 20px;
+                padding-bottom: 30px;
               }
 
 
@@ -706,7 +706,6 @@ header {
     z-index: 0px;
   }
 
-
   .section-container{
     background-color: #f1f1f1;
     padding: 20px 20px 0px 20px;
@@ -714,30 +713,28 @@ header {
     border-radius: 5px;
   }
 
-    .main-gallery p {
-      font-size: 12.5px;
-      padding-right: 30px;
-      padding-bottom: 0px;
-      letter-spacing: 0.8px;
-
-    }
-
+  .page-intro {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
     /* Image Subheaders*/
       h5 {
         margin-top: 20px;
         margin-bottom: 0px;
-        font-size: 14px;
-        line-height: 1.3;
+        font-size: 13px;
         letter-spacing: 0.5px;
         font-weight: bolder;
       }
 
-
-      .page-intro {
-        display: flex;
-        flex-wrap: wrap;
+    /* Image Desc*/
+      .main-gallery p {
+        font-size: 13px;
+        width: 70%;
+        margin-bottom: 20px;
+        letter-spacing: 0.8px;
       }
+
 
   /* Portfolio Images*/
     .graphicdesign-img {
@@ -750,7 +747,6 @@ header {
       margin-top: 0px;
       width: 100%;
     }
-
 
   /*Sctollable Images*/
     .scrollable-image-container {
@@ -823,19 +819,13 @@ header {
       width: 100%;
   }
 
-  .link-wrap-1 h5{
-    margin-top: 40px;
-  }
-
-  .link-wrap h5{
+  .link-wrap-1 h5, .link-wrap h5{
     margin-top: 40px;
   }
 
     .main-gallery a {
-      margin-left: 5px;
+      margin: auto 5px auto 5px;
       box-shadow: -5px 5px  #29373b;
-      margin-bottom: auto;
-      margin-top: auto;
       background-color: white;
       border: solid 3px #feea98;
       color: #29373b;
@@ -847,30 +837,34 @@ header {
       letter-spacing: 0.5px;
     }
 
-    .gg-link {
-      display: inline-block;
-      background: currentColor;
-      margin: 6px 4px 4px 8px;
+    .main-gallery a:hover {
+      background-color: #feea98;
     }
 
     i {
       padding-left: 5px;
     }
 
-    .main-gallery a:hover {
-      background-color: #feea98;
-    }
+
+      .gg-link {
+        display: inline-block;
+        background: currentColor;
+        margin: 6px 4px 4px 8px;
+      }
+
+
+
 
     /*~*~ Media query for responsive sections *~*~*/
         @media screen and (max-width: 600px) {
           .main-gallery {
-            padding: 40px 30px 30px 30px;
+            padding: 30px;
           }
 
 
 
               .main-gallery p {
-                font-size: 12px;
+                font-size: 12.5px;
                 padding-bottom: 20px;
                 letter-spacing: 0.5px;
                 border-bottom: solid 2px #f1f1f1;
@@ -895,7 +889,6 @@ header {
           }
 
           .link-wrap-last p{
-            font-size: 9px;
             margin-bottom: 20px;
             letter-spacing: 0.8px;
 
@@ -976,6 +969,7 @@ header {
 
   /* Download PDF Button for Services Button AND send from form*/
     .services-button  {
+      color: #29373b;
       margin-left: 5px;
       box-shadow: -5px 5px  #29373b;
       background-color: white;
