@@ -5,44 +5,66 @@ function toggleMobileMenu(icon) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const sectionsButton = document.querySelector(".sections-button");
-    const subMenu = document.querySelector(".sub-menu");
+  const hideArrow = document.getElementById('hideArrow');
+  const openArrow = document.getElementById('openArrow');
+  const subMenu = document.getElementById('subMenu');
+  const sectionsButton = document.getElementById('sectionsButton');
 
-    sectionsButton.addEventListener("click", function() {
-        subMenu.classList.toggle("active");
-        sectionsButton.classList.toggle("active");
-    });
+  // Function to toggle menu visibility
+  function toggleMenu() {
+    subMenu.classList.toggle("hidden");
+    hideArrow.style.display = hideArrow.style.display === "none" ? "inline-block" : "none";
+    openArrow.style.display = openArrow.style.display === "none" ? "inline-block" : "none";
+    // Toggle visibility of mobile sections button
+    sectionsButton.style.display = sectionsButton.style.display === "none" ? "inline-block" : "none";
+    // Remove 'active' class from submenu
+    subMenu.classList.remove("active");
+  }
 
-    document.addEventListener("click", function(event) {
-        if (!subMenu.contains(event.target) && !sectionsButton.contains(event.target)) {
-            subMenu.classList.remove("active");
-            sectionsButton.classList.remove("active");
-        }
-    });
+  // Function to toggle submenu on larger screens
+  function toggleSubMenu() {
+    if (window.innerWidth <= 600) {
+      subMenu.classList.toggle("active");
+      sectionsButton.classList.toggle("active");
+    }
+  }
 
-    // Close the menu when a sub-menu item is clicked
-    const subMenuItems = document.querySelectorAll(".sub-menu li a");
-    subMenuItems.forEach(function(item) {
-        item.addEventListener("click", function() {
-            subMenu.classList.remove("active");
-            sectionsButton.classList.remove("active");
-        });
-    });
+  // Add event listeners to hideArrow and openArrow for toggling menu visibility
+  hideArrow.addEventListener('click', toggleMenu);
+  openArrow.addEventListener('click', toggleMenu);
+
+  // Conditionally add event listener to sectionsButton for smaller screens
+  if (window.innerWidth <= 600) {
+    sectionsButton.addEventListener("click", toggleSubMenu);
+  }
 });
 
-
+// Function to handle scroll
 function handleScroll() {
   var headerHeight = document.getElementById('main-header').offsetHeight;
   var sections = document.querySelector('.sections');
+  var buttonContainer = document.querySelector('.button-container');
 
-  if (window.pageYOffset > headerHeight) {
+  if (window.pageYOffset > headerHeight + 50) {
     sections.classList.add('fixed-sections');
+    buttonContainer.classList.add('fixed-button-container');
   } else {
     sections.classList.remove('fixed-sections');
+    buttonContainer.classList.remove('fixed-button-container');
   }
 }
 
-handleScroll();
+window.onload = function() {
+  if (window.innerWidth > 1400) {
+    var subMenu = document.getElementById('subMenu');
+    subMenu.classList.add('active');
+    document.getElementById('hideArrow').style.display = 'none';
+    document.getElementById('openArrow').style.display = 'inline-block';
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+  handleScroll();
+});
 
 window.addEventListener('scroll', handleScroll);
-
