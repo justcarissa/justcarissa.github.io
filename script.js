@@ -3,18 +3,6 @@ function toggleMobileMenu(icon) {
   var mobileMenu = document.querySelector(".mobile-menu");
   mobileMenu.classList.toggle("active");
 }
-
-window.onload = function() {
-  if (window.innerWidth > 1400) {
-    var subMenu = document.getElementById('subMenu');
-    subMenu.classList.add('active');
-    document.getElementById('hideArrow').style.display = 'none';
-    document.getElementById('openArrow').style.display = 'inline-block';
-  }
-
-  handleScroll(); // Call handleScroll function on window load
-};
-
 document.addEventListener("DOMContentLoaded", function() {
   const hideArrow = document.getElementById('hideArrow');
   const openArrow = document.getElementById('openArrow');
@@ -40,11 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to close submenu when a link is clicked
   function closeSubMenu() {
-    subMenu.classList.add("hidden");
-    hideArrow.style.display = "inline-block";
-    openArrow.style.display = "none";
-    sectionsButton.style.display = "inline-block";
-    subMenu.classList.remove("active");
+    // Check if screen width is less than or equal to 600px (smaller screens)
+    if (window.innerWidth <= 600) {
+      subMenu.classList.add("hidden");
+      hideArrow.style.display = "inline-block";
+      openArrow.style.display = "none";
+      sectionsButton.style.display = "inline-block";
+      subMenu.classList.remove("active");
+    }
   }
 
   // Add event listeners to hideArrow and openArrow for toggling menu visibility
@@ -54,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Add event listener to sectionsButton for larger screens
   sectionsButton.addEventListener("click", toggleSubMenu);
 
-  // Add event listener to submenu links to close the menu
+  // Add event listener to submenu links to close the menu on smaller screens
   const submenuLinks = document.querySelectorAll('.sub-menu a');
   submenuLinks.forEach(link => {
     link.addEventListener('click', closeSubMenu);
@@ -79,3 +70,4 @@ function handleScroll() {
 
 // Call handleScroll function when scrolling
 window.addEventListener('scroll', handleScroll);
+
