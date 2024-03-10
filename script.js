@@ -4,6 +4,17 @@ function toggleMobileMenu(icon) {
   mobileMenu.classList.toggle("active");
 }
 
+window.onload = function() {
+  if (window.innerWidth > 1400) {
+    var subMenu = document.getElementById('subMenu');
+    subMenu.classList.add('active');
+    document.getElementById('hideArrow').style.display = 'none';
+    document.getElementById('openArrow').style.display = 'inline-block';
+  }
+
+  handleScroll(); // Call handleScroll function on window load
+};
+
 document.addEventListener("DOMContentLoaded", function() {
   const hideArrow = document.getElementById('hideArrow');
   const openArrow = document.getElementById('openArrow');
@@ -23,20 +34,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to toggle submenu on larger screens
   function toggleSubMenu() {
-    if (window.innerWidth <= 600) {
-      subMenu.classList.toggle("active");
-      sectionsButton.classList.toggle("active");
-    }
+    subMenu.classList.toggle("active");
+    sectionsButton.classList.toggle("active");
+  }
+
+  // Function to close submenu when a link is clicked
+  function closeSubMenu() {
+    subMenu.classList.add("hidden");
+    hideArrow.style.display = "inline-block";
+    openArrow.style.display = "none";
+    sectionsButton.style.display = "inline-block";
+    subMenu.classList.remove("active");
   }
 
   // Add event listeners to hideArrow and openArrow for toggling menu visibility
   hideArrow.addEventListener('click', toggleMenu);
   openArrow.addEventListener('click', toggleMenu);
 
-  // Conditionally add event listener to sectionsButton for smaller screens
-  if (window.innerWidth <= 600) {
-    sectionsButton.addEventListener("click", toggleSubMenu);
-  }
+  // Add event listener to sectionsButton for larger screens
+  sectionsButton.addEventListener("click", toggleSubMenu);
+
+  // Add event listener to submenu links to close the menu
+  const submenuLinks = document.querySelectorAll('.sub-menu a');
+  submenuLinks.forEach(link => {
+    link.addEventListener('click', closeSubMenu);
+  });
 });
 
 // Function to handle scroll
@@ -45,6 +67,7 @@ function handleScroll() {
   var sections = document.querySelector('.sections');
   var buttonContainer = document.querySelector('.button-container');
 
+  // Check if scrolled beyond the header height + 50px
   if (window.pageYOffset > headerHeight + 50) {
     sections.classList.add('fixed-sections');
     buttonContainer.classList.add('fixed-button-container');
@@ -54,17 +77,5 @@ function handleScroll() {
   }
 }
 
-window.onload = function() {
-  if (window.innerWidth > 1400) {
-    var subMenu = document.getElementById('subMenu');
-    subMenu.classList.add('active');
-    document.getElementById('hideArrow').style.display = 'none';
-    document.getElementById('openArrow').style.display = 'inline-block';
-  }
-};
-
-document.addEventListener("DOMContentLoaded", function() {
-  handleScroll();
-});
-
+// Call handleScroll function when scrolling
 window.addEventListener('scroll', handleScroll);
