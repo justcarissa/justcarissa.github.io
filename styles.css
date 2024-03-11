@@ -465,14 +465,14 @@ padding: 40px;
       letter-spacing: 1.4px;
       font-weight: bold;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .sub-menu li a {
       border-radius: 5px;
       background-color: #29373b;
       padding: 8px;
-      font-size: 12px;
+      font-size: 14px;
       border: solid 2px #29373b;
     }
 
