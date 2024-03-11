@@ -535,10 +535,12 @@ padding: 40px;
       }
 
       .hide-arrow {
+        font-family: quasimoda, san-serif;
         display: inline-block;
       }
 
       .open-arrow {
+        font-family: quasimoda, san-serif;
         display: none;
       }
 
