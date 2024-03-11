@@ -1074,13 +1074,16 @@ padding: 40px;
 .main-services {
   padding: 0px 0px 40px 0px;
   }
-
-h2 {
-margin: 40px}
-
-th {padding: 5px}
-td{padding: 5px}
-
+    
+    h2 {
+    margin: 40px}
+    
+      th {padding: 5px}
+      td {padding: 5px}
+    
+          ol {
+          padding-left: 20px;
+        		}
         }
 
 /************************FORM.HTML************************/
