@@ -649,10 +649,11 @@ padding: 40px;
                 background-color: #29373b;
                 padding: 6px;
                 font-size: 15px;
-                text-transform: none;
+         
               }
 
               .sub-menu li {
+    					font-size: 15px;
                 margin: 0;
                 padding: 8px;
                 text-align: left;
@@ -660,8 +661,9 @@ padding: 40px;
 
               .sub-menu a {
                 display: flex;
-                font-weight: normal;
+                font-weight: bold;
                 line-height: normal;
+	font-size: 15px;
               }
 
               /* Hidden class to hide elements */
