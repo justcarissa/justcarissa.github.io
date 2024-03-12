@@ -72,3 +72,29 @@ function handleScroll() {
     buttonContainer.classList.remove('fixed-button-container');
   }
 }
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+
+// Get all elements within scrollable image containers
+var scrollableImages = document.querySelectorAll('.scrollable-image img');
+var verticalScrollableImages = document.querySelectorAll('.vertical-scrollable-image img');
+
+// Combine all images to include those within scrollable image containers
+var allImages = document.querySelectorAll('.first-section-img, .graphicdesign-img, .scrollable-image img, .vertical-scrollable-image img');
+
+allImages.forEach(function(image) {
+  image.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
