@@ -650,7 +650,7 @@ padding: 40px;
                 background-color: #29373b;
                 padding: 6px;
                 font-size: 15px;
-         
+
               }
 
               .sub-menu li {
@@ -962,8 +962,12 @@ padding: 40px;
     width: 100%;
   }
 
+  table{
+    border-b: 2px solid #29373b;
+  }
+
   #services {
-    font-family: quasimoda;
+    font-family: quasimoda, sans-serif;
     font-size: 15px;
     line-height: 20px;
     border-collapse: collapse;
@@ -972,15 +976,16 @@ padding: 40px;
     }
 
     #services td, #services th {
-      border: 2px solid #f1f1f1;
-      padding: 10px;
+      border: 2px solid white;
+      padding: 15px;
     }
 
-    #services tr:nth-child(even){background-color: white;}
+    #services tr:nth-child(even){background-color: #f1f1f1;}
 
-    #services tr:hover {background-color: #f1f1f1;}
+
 
     #services th {
+            border: 2px solid #29373b;
       font-size: 15px;
       padding-top: 14px;
       padding-bottom: 14px;
@@ -1080,17 +1085,48 @@ padding: 40px;
 .main-services {
   padding: 0px 0px 40px 0px;
   }
-    
+
     .main-services h2 {
     margin: 40px}
-    
-      th {padding: 5px}
-      td {padding: 5px}
-    
+
+
+
+          #services td{
+
+            border-bottom: 2px solid #29373b;
+            border: 1px solid white;
+        padding: 10px;
+            font-size: 14px;
+          }
+            .gray {
+              text-align: center;
+                    background-color:
+            }
+
+            #services tr:hover {background-color: initial;}
+    #services tr:nth-child(even){background-color: #f1f1f1; }
+
+            #services th {
+              font-size: 14.5px;
+              padding: 10px 5px 10px 10px;
+              border: 2px solid #29373b;
+              text-align: left;
+              background-color: #29373b;
+              color: #feea98;
+              letter-spacing: 0.8px;
+              text-transform: uppercase;
+              line-height: 16px;
+
+            }
+
           ol {
           padding-left: 25px;
         		}
 
+            td.thick
+            {text-align: left;
+              font-weight: bold;
+            }
 
     .main-services button  {
       font-size: 15px;
@@ -1199,7 +1235,7 @@ form {
           }
 
         /*~*~ Media query for responsive sections *~*~*/
-          @media screen and (max-width: 600px) 
+          @media screen and (max-width: 600px)
 {
              form {padding:40px;
 					}
