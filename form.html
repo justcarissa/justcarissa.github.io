@@ -47,32 +47,38 @@
 
   <!-- The flexible grid (content) -->
   <div class="row">
-<div class="main-services">
-  
-  <h2>Contact Form</h2>
-   <form class="contact"  action="https://formspree.io/f/xeqygadv"
-  method="POST">
+    <div class="main-services">
 
-    <label for="name">Name</label>
-           <input type="text" name="name" id="name" required>
+      <h2>Contact Form</h2>
 
-           <label for="email">Email</label>
-           <input type="email" name="email" id="email" required>
-              <br>
+      <div class="form-content">
+        <form class="contact" action="https://formspree.io/f/xeqygadv" method="POST">
 
-           <label for="subject">Subject</label>
-           <input type="text" name="subject" id="subject" required>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
 
-           <label for="message">Message</label>
-           <textarea name="message" id="message" required></textarea>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+          <br>
 
-           <br>
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" prequired>
 
-           <button class="services-button">Send<i class="fa fa-send"></i></button>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+
+
+
+      </div>
+
       </form>
 
-</div>
-</div>
+      <button class="send-email-button">SEND EMAIL<i class="fa fa-send"></i></button>
+      <br>
+    </div>
+
+  </div>
+
 
   <!-- Footer -->
   <div class="footer">
