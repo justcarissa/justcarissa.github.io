@@ -31,18 +31,17 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 80px;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 20px 20px;
   }
 
   #logo {
     height: 33px;
-    padding-left: 20px;
+    padding-left: 0px;
   }
 }
 
 /****** Navigation Bar & BUTTONS ******/
 .navbar {
-  display: block;
   display: flex;
 }
 
@@ -73,7 +72,7 @@ header ul a {
 }
 
 header p {
-  padding: 0px 40px 0px 40px;
+  padding: 0px 20px 0px 20px;
   color: #f1f1f1;
   font-size: 18px;
   display: inline;
