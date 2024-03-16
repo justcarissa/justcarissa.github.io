@@ -11,39 +11,38 @@
 </head>
 
 <body>
-
   <header>
-    <div class="header-container">
-      <img id="logo" src="homeimages\logo.png" alt="logo.png" />
+     <div class="header-container">
+       <img id="logo" src="homeimages\logo.png" alt="logo.png" />
 
-      <!-- Navigation Bar -->
-      <nav class="navbar">
-        <ul>
-          <li><a href="index.html">ABOUT</a></li>
-          <li><a href="graphicdesign.html">PORTFOLIO</a></li>
-          <li><a href="services.html">SERVICES</a></li>
-          <li class="selected"><a href="form.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
+       <!-- Navigation Bar -->
+       <nav class="navbar">
+         <ul>
+           <li><a href="index.html">ABOUT</a></li> <div class= "pipe"><p>|</p></div>
+           <li><a href="graphicdesign.html">PORTFOLIO</a></li> <div class= "pipe"><p>|</p></div>
+           <li><a href="services.html">SERVICES</a></li> <div class= "pipe"><p>|</p></div>
+           <li class="selected"><a href="form.html">CONTACT</a></li>
+         </ul>
+       </nav>
+     </div>
 
-    <!-- Container for the hamburger menu -->
-    <div class="mobile-menu-container">
-      <nav id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </nav>
+     <!-- Container for the hamburger menu -->
+     <div class="mobile-menu-container">
+       <nav id="hamburger-icon" onclick="toggleMobileMenu(this)">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+       </nav>
 
-      <!-- Mobile Menu -->
-      <ul class="mobile-menu">
-        <li class="selected"><a href="index.html">ABOUT</a></li>
-        <li><a href="graphicdesign.html">PORTFOLIO</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="form.html">CONTACT</a></li>
-      </ul>
-    </div>
-  </header>
+       <!-- Mobile Menu -->
+       <ul class="mobile-menu">
+         <li class="selected"><a href="index.html">ABOUT</a></li>
+         <li><a href="graphicdesign.html">PORTFOLIO</a></li>
+         <li><a href="services.html">SERVICES</a></li>
+         <li><a href="form.html">CONTACT</a></li>
+       </ul>
+     </div>
+   </header>
 
   <!-- The flexible grid (content) -->
   <div class="row">
@@ -67,13 +66,15 @@
           <label for="message">Message</label>
           <textarea name="message" id="message" required></textarea>
 
-
+      <button class="send-email-button">SEND EMAIL<i class="fa fa-send"></i></button>
 
       </div>
 
+
+
       </form>
 
-      <button class="send-email-button">SEND EMAIL<i class="fa fa-send"></i></button>
+
       <br>
     </div>
 
