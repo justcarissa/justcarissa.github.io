@@ -1,103 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <header>
-     <div class="header-container">
-       <img id="logo" src="homeimages\logo.png" alt="logo.png" />
-
-       <!-- Navigation Bar -->
-       <nav class="navbar">
-         <ul>
-           <li><a href="index.html">ABOUT</a></li> <div class= "pipe"><p>|</p></div>
-           <li><a href="graphicdesign.html">PORTFOLIO</a></li> <div class= "pipe"><p>|</p></div>
-           <li><a href="services.html">SERVICES</a></li> <div class= "pipe"><p>|</p></div>
-           <li class="selected"><a href="form.html">CONTACT</a></li>
-         </ul>
-       </nav>
-     </div>
-
-     <!-- Container for the hamburger menu -->
-     <div class="mobile-menu-container">
-       <nav id="hamburger-icon" onclick="toggleMobileMenu(this)">
-         <div class="bar1"></div>
-         <div class="bar2"></div>
-         <div class="bar3"></div>
-       </nav>
-
-       <!-- Mobile Menu -->
-       <ul class="mobile-menu">
-         <li class="selected"><a href="index.html">ABOUT</a></li>
-         <li><a href="graphicdesign.html">PORTFOLIO</a></li>
-         <li><a href="services.html">SERVICES</a></li>
-         <li><a href="form.html">CONTACT</a></li>
-       </ul>
-     </div>
-   </header>
-
-  <!-- The flexible grid (content) -->
-  <div class="row">
-    <div class="main-services">
-
-      <h2>Contact Form</h2>
-
-      <div class="form-content">
-        <form class="contact" action="https://formspree.io/f/xeqygadv" method="POST">
-
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required>
-
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required>
-          <br>
-
-          <label for="subject">Subject</label>
-          <input type="text" name="subject" id="subject" prequired>
-
-          <label for="message">Message</label>
-          <textarea name="message" id="message" required></textarea>
-
-      <button class="send-email-button">SEND EMAIL<i class="fa fa-send"></i></button>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=360, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img id="logo" src="homeimages\logo.png" alt="logo.png" />
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+          <ul>
+            <div class="firstpipe">
+              <p>|</p>
+            </div>
+            <li>
+              <a href="index.html">ABOUT</a>
+            </li>
+            <div>
+              <p>|</p>
+            </div>
+            <li>
+              <a href="graphicdesign.html">PORTFOLIO</a>
+            </li>
+            <div>
+              <p>|</p>
+            </div>
+            <li>
+              <a href="services.html">SERVICES</a>
+            </li>
+            <div>
+              <p>|</p>
+            </div>
+            <li class="selected">
+              <a href="form.html">CONTACT</a>
+            </li>
+            <div>
+              <p>|</p>
+            </div>
+          </ul>
+        </nav>
       </div>
-
-
-
-      </form>
-
-
-      <br>
+      <!-- Container for the hamburger menu -->
+      <div class="mobile-menu-container">
+        <nav id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </nav>
+        <!-- Mobile Menu -->
+        <ul class="mobile-menu">
+          <li class="selected">
+            <a href="index.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="graphicdesign.html">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="services.html">SERVICES</a>
+          </li>
+          <li>
+            <a href="form.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+      <div class="main-services">
+        <h2>Contact Form</h2>
+        <div class="form-content">
+          <form class="contact" action="https://formspree.io/f/xeqygadv" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" prequired>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+            <button class="send-email-button">SEND EMAIL <i class="fa fa-send"></i>
+            </button>
+        </div>
+        </form>
+        <br>
+      </div>
     </div>
-
-  </div>
-
-
-  <!-- Footer -->
-  <div class="footer">
-    <div class="socials">
-      <ul class="icons">
-        <li><a href="https://carissacancreate.etsy.com" class="fa fa-etsy"></a></li>
-        <li><a href="https://www.instagram.com/jcarissaj/?hl=en" class="fa fa-instagram"></a></li>
-        <li><a href="https://github.com/justcarissa" class="fa fa-github"></a></li>
-        <li><a href="https://www.linkedin.com/in/carissajust" class="fa fa-linkedin"></a></li>
-        <li><a href="https://www.pinterest.com/carissarjust/_saved/" class="fa fa-pinterest"></a></li>
-      </ul>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="socials">
+        <ul class="icons">
+          <li>
+            <a href="https://carissacancreate.etsy.com" class="fa fa-etsy"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/jcarissaj/?hl=en" class="fa fa-instagram"></a>
+          </li>
+          <li>
+            <a href="https://github.com/justcarissa" class="fa fa-github"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/carissajust" class="fa fa-linkedin"></a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/carissarjust/_saved/" class="fa fa-pinterest"></a>
+          </li>
+        </ul>
+      </div>
+      <p>2023 Carissa's Creations&copy</p>
     </div>
-    <p>2023 Carissa's Creations&copy</p>
-  </div>
-
-  <script src="script.js"></script>
-
-</body>
-
-
+    <script src="script.js"></script>
+  </body>
 </html>
