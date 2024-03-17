@@ -8,7 +8,7 @@
 /******************* HEADER-LOGO-NAV *******************/
 header {
   width: 100%;
-  padding: 40px;
+  padding: 40px 40px 40px 0px;
   height: 230px;
   background-color: #29373b;
   display: flex;
@@ -21,7 +21,7 @@ header {
 }
 
 #logo {
-  padding-left: 0px;
+  padding-left: 30px;
   margin-bottom: 50px;
   height: 85px;
   width: auto;
@@ -110,13 +110,11 @@ header p {
   }
 
   .mobile-menu li {
-    margin-bottom: 40px;
     display: inline-block;
   }
 
   .mobile-menu li a {
     font-size: 19px;
-    padding-bottom: 60px;
   }
 
   #hamburger-icon {
