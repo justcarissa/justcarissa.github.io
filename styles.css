@@ -31,7 +31,7 @@ header {
 @media screen and (max-width: 600px) {
   header {
     height: 80px;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 20px 20px 20px;
   }
 
   #logo {
@@ -859,8 +859,7 @@ h5 {
 
   /* Image Subheaders*/
   .caption h5 {
-    margin-top: 40px;
-    margin-bottom: 0px;
+    padding-top: 20px;
     font-size: 16px;
     line-height: 0.9;
     letter-spacing: 0.5px;
@@ -1065,6 +1064,11 @@ p.thick {
 
 /*~*~ Media query for responsive sections *~*~*/
 @media screen and (max-width: 600px) {
+
+.modal .caption h5 {
+padding-top: 18px;
+margin-top: 0px;}
+
   .container {
     border-radius: 5px;
     border: solid 3pt #f1f1f1;
@@ -1384,6 +1388,9 @@ textarea {
   height: 150px;
 }
 
+
+
+
 .modal .caption {
   padding: 0px 40px 0px 40px;
 }
@@ -1502,4 +1509,5 @@ textarea {
   .magnify-icon .fa {
     font-size: 14px
   }
+
 }
