@@ -21,7 +21,7 @@ header {
 }
 
 #logo {
-  padding-left: 30px;
+  padding-left: 40px;
   margin-bottom: 50px;
   height: 85px;
   width: auto;
@@ -80,6 +80,9 @@ header p {
   display: inline;
 }
 
+.firstpipe{
+  padding: 0px 20px 0px 0px;}
+
 /*~*~ Media query for responsive sections *~*~*/
 @media screen and (max-width: 600px) {
 
@@ -109,8 +112,10 @@ header p {
     background-color: #29373b;
   }
 
+
   .mobile-menu li {
-    display: inline-block;
+    display: inline-block;    margin-bottom: 40px;
+
   }
 
   .mobile-menu li a {
