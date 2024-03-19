@@ -1468,7 +1468,7 @@ textarea {
 	position: absolute;
 	top: 15px;
 	right: 35px;
-	color: #f1f1f1;
+	color: #feea98;
 	font-size: 40px;
 	font-weight: bold;
 	transition: 0.3s;
@@ -1476,9 +1476,20 @@ textarea {
 
 .close:hover,
 .close:focus {
-	color: #bbb;
+	color: #fbd25e;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+/* CSS to prevent scrolling and disable pointer events when modal is open */
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-open .image-container,
+.modal-open .scrollable-image-container,
+.modal-open .magnify-icon {
+  pointer-events: none;
 }
 
 /* Caption */
