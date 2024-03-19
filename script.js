@@ -1,3 +1,4 @@
+
 // Function to toggle mobile menu
 function toggleMobileMenu(icon) {
   icon.classList.toggle("open");
@@ -90,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('scroll', handleScroll);
 });
 
-// Toggle modal function
+// Function to toggle modal function
 function toggleModal(event) {
   var modal = document.getElementById("myModal");
   var modalImg = document.getElementById("img01");
@@ -103,9 +104,14 @@ function toggleModal(event) {
   modalImg.src = image.src;
   captionText.innerHTML = caption ? caption.innerHTML : '';
   modal.style.display = "block";
+  
+  // Add modal-open class to body to disable scrolling and clicking
+  document.body.classList.add('modal-open');
 
   var span = document.getElementsByClassName("close")[0];
   span.onclick = function() {
     modal.style.display = "none";
+    // Remove modal-open class from body when modal is closed
+    document.body.classList.remove('modal-open');
   };
 }
