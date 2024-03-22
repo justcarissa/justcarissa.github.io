@@ -1,424 +1,506 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=360, initial-scale=1.0">
-    <title>Graphic Design</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <header class="portfolio-header" id="main-header">
-      <div class="header-container">
-        <img id="logo" src="homeimages\logo.png" alt="logo.png" />
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-          <ul>
-            <div class="firstpipe">
-              <p>|</p>
-            </div>
-            <li>
-              <a href="index.html">ABOUT</a>
-            </li>
-            <div>
-              <p>|</p>
-            </div>
-            <li class="selected">
-              <a href="graphicdesign.html">PORTFOLIO</a>
-            </li>
-            <div>
-              <p>|</p>
-            </div>
-            <li>
-              <a href="services.html">SERVICES</a>
-            </li>
-            <div>
-              <p>|</p>
-            </div>
-            <li>
-              <a href="form.html">CONTACT</a>
-            </li>
-            <div>
-              <p>|</p>
-            </div>
-          </ul>
-        </nav>
-      </div>
-      <!-- Container for the hamburger menu -->
-      <div class="mobile-menu-container">
-        <nav id="hamburger-icon" onclick="toggleMobileMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </nav>
-        <!-- Mobile Menu -->
-        <ul class="mobile-menu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=360, initial-scale=1.0">
+  <title>Graphic Design</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header class="portfolio-header" id="main-header">
+    <div class="header-container">
+      <img id="logo" src="homeimages\logo.png" alt="logo.png" />
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <ul>
+          <div class="firstpipe">
+            <p>|</p>
+          </div>
           <li>
             <a href="index.html">ABOUT</a>
           </li>
+          <div>
+            <p>|</p>
+          </div>
           <li class="selected">
             <a href="graphicdesign.html">PORTFOLIO</a>
           </li>
+          <div>
+            <p>|</p>
+          </div>
           <li>
             <a href="services.html">SERVICES</a>
           </li>
+          <div>
+            <p>|</p>
+          </div>
           <li>
             <a href="form.html">CONTACT</a>
           </li>
+          <div>
+            <p>|</p>
+          </div>
         </ul>
-      </div>
-    </header>
-    <!-- Sections and Intro -->
-    <div id="parent" class="parent">
-      <div id="a" class="sections fixed-sections">
-        <div class="button-container" id="button-container">
-          <button id="sectionsButton" class="sections-button" onclick="toggleSubMenu()">
-            <h3>Sections</h3>
-          </button>
-          <span id="hideArrow" class="material-symbols-outlined"> hide </span>
-          <span id="openArrow" class="material-symbols-outlined" style="display: none;"> open_in_full </span>
-        </div>
-        <!-- Srctions button and Sub-menu for mobile -->
-        <ul id="subMenu" class="sub-menu">
-          <li>
-            <a href="#section1">Infographics</a>
-          </li>
-          <li>
-            <a href="#section2">Printed Collateral</a>
-          </li>
-          <li>
-            <a href="#section3">Brand Design</a>
-          </li>
-          <li>
-            <a href="#section4">Package Designs</a>
-          </li>
-          <li>
-            <a href="#section5">Illustration Design</a>
-          </li>
-          <li>
-            <a href="#section6">UX Design</a>
-          </li>
-        </ul>
+      </nav>
+    </div>
+    <!-- Container for the hamburger menu -->
+    <div class="mobile-menu-container">
+      <nav id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </nav>
+      <!-- Mobile Menu -->
+      <ul class="mobile-menu">
+        <li>
+          <a href="index.html">ABOUT</a>
+        </li>
+        <li class="selected">
+          <a href="graphicdesign.html">PORTFOLIO</a>
+        </li>
+        <li>
+          <a href="services.html">SERVICES</a>
+        </li>
+        <li>
+          <a href="form.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Sections and Intro -->
+  <div id="parent" class="parent">
+    <div id="a" class="sections fixed-sections">
+      <div class="button-container" id="button-container">
+        <button id="sectionsButton" class="sections-button" onclick="toggleSubMenu()">
+          <h3>Sections</h3>
+        </button>
+        <span id="hideArrow" class="material-symbols-outlined"> hide </span>
+        <span id="openArrow" class="material-symbols-outlined" style="display: none;"> open_in_full </span>
       </div>
       <!-- Srctions button and Sub-menu for mobile -->
-      <div id="b" class="page-intro">
-        <div class="side">
-          <h3>Portfolio</h3>
-          <p>Welcome to my design portfolio where you can browse through the various types of design I specialize in. Here you will find captivating infographics, persuasive brochures, memorable logos, eye-catching package designs, intuitive web designs, original illustrations, and custom designed books. All of my work is created using Adobe Illustrator, InDesign, and Photoshop.</p>
-        </div>
-      </div>
+      <ul id="subMenu" class="sub-menu">
+        <li>
+          <a href="#section1">Infographics</a>
+        </li>
+        <li>
+          <a href="#section2">Printed Collateral</a>
+        </li>
+        <li>
+          <a href="#section3">Brand Design</a>
+        </li>
+        <li>
+          <a href="#section4">Package Designs</a>
+        </li>
+        <li>
+          <a href="#section5">Illustration Design</a>
+        </li>
+        <li>
+          <a href="#section6">UX Design</a>
+        </li>
+      </ul>
     </div>
-    <!-- Gallery (content) -->
-    <div class="row">
-      <div class="top-intro">
+    <!-- Srctions button and Sub-menu for mobile -->
+    <div id="b" class="page-intro">
+      <div class="side">
         <h3>Portfolio</h3>
-        <p>Welcome to my design portfolio where you can browse through the various types of design I specialize in. Here you will find captivating infographics, persuasive brochures, memorable logos, eye-catching package designs, intuitive web designs, original illustrations, and custom designed books. All of my work is created using Adobe Illustrator, InDesign, and Photoshop.</p>
+        <p>Welcome to my design portfolio where you can browse through the various types of design I specialize in. Here you will find captivating infographics, persuasive brochures, memorable logos, eye-catching package designs, intuitive web
+          designs, original illustrations, and custom designed books. All of my work is created using Adobe Illustrator, InDesign, and Photoshop.</p>
       </div>
-      <div class="main-gallery">
-        <section id="section1">
-          <h2>Infographics</h2>
-          <!-- Modal -->
-          <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="modalCaption" class="caption"></div>
+    </div>
+  </div>
+  <!-- Gallery (content) -->
+  <div class="row">
+    <div class="top-intro">
+      <h3>Portfolio</h3>
+      <p>Welcome to my design portfolio where you can browse through the various types of design I specialize in. Here you will find captivating infographics, persuasive brochures, memorable logos, eye-catching package designs, intuitive web designs,
+        original illustrations, and custom designed books. All of my work is created using Adobe Illustrator, InDesign, and Photoshop.</p>
+    </div>
+    <div class="main-gallery">
+      <section id="section1">
+        <h2>Infographics</h2>
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="modalCaption" class="caption"></div>
+        </div>
+
+        <div class="section-container">
+
+          <div class="image-container">
+            <img src="graphic design work\lighting.jpg" class="first-section-img" alt="lighting.jpg">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>History of Lighting</h5>
+              <p>A timeline infographic with original drawings, illustrating the history and development of lighting over 220 years.</p>
+            </div>
           </div>
-          <div class="section-container">
-            <div class="image-container">
-              <img src="graphic design work\lighting.jpg" class="first-section-img" alt="lighting.jpg">
+          <br>
+
+          <div class="scrollable-image-container">
+            <div class="vertical-scrollable-image">
+              <img src="graphic design work\sleep.jpg" alt="sleep.jpg">
+            </div>
+            <div class="portfolio-button-wrap">
               <span class="magnify-icon" onclick="toggleModal(event)">
                 <p class="enlarge">ENLARGE</p>
                 <i class="fa fa-expand"></i>
               </span>
-              <div class="caption">
-                <h5>History of Lighting</h5>
-                <p>A timeline infographic with original drawings, illustrating the history and development of lighting over 220 years.</p>
-              </div>
             </div>
-            <br>
-            <div class="scrollable-image-container">
-              <div class="vertical-scrollable-image">
-                <img src="graphic design work\sleep.jpg" alt="sleep.jpg">
-              </div>
+            <div class="caption">
+              <h5>Get Your Sleep</h5>
+              <p>An informational infographic on sleep and how it affects the body. Includes a drawing of the brain, sleep mechanisms, and guidance on how much sleep is enough. Scroll through to see the entire graphic.</p>
+            </div>
+          </div>
+          <br>
+
+          <div class="scrollable-image-container">
+            <div class="scrollable-image">
+              <img src="graphic design work\herbgarden.jpg" alt="herbgarden.jpg">
+            </div>
+            <div class="portfolio-button-wrap">
               <span class="magnify-icon" onclick="toggleModal(event)">
                 <p class="enlarge">ENLARGE</p>
                 <i class="fa fa-expand"></i>
               </span>
-              <div class="caption">
-                <h5>Get Your Sleep</h5>
-                <p>An informational infographic on sleep and how it affects the body. Includes a drawing of the brain, sleep mechanisms, and guidance on how much sleep is enough. Scroll through to see the entire graphic.</p>
-              </div>
             </div>
-            <br>
-            <div class="scrollable-image-container">
-              <div class="scrollable-image">
-                <img src="graphic design work\herbgarden.jpg" alt="herbgarden.jpg">
-              </div>
+            <div class="caption">
+              <h5>How to Start an Indoor Herb Garden</h5>
+              <p>A versatile process infographic designed for digital or print use as an accordion booklet. Combining clear illustrations with concise steps, it offers an engaging and informative guide. Scroll horizontally to see each page.</p>
+            </div>
+          </div>
+          <br>
+
+
+
+
+
+
+      </section>
+      <section id="section2">
+        <h2>Printed Collateral</h2>
+        <div class="section-container">
+          <div class="image-container">
+            <img src="graphic design work\coronavirus.png" class="first-section-img" alt="coronavirus.png">
+            <div class="portfolio-button-wrap">
               <span class="magnify-icon" onclick="toggleModal(event)">
                 <p class="enlarge">ENLARGE</p>
                 <i class="fa fa-expand"></i>
               </span>
-              <div class="caption">
-                <h5>How to Start an Indoor Herb Garden</h5>
-                <p>A versatile process infographic designed for digital or print use as an accordion booklet. Combining clear illustrations with concise steps, it offers an engaging and informative guide. Scroll horizontally to see each page.</p>
-              </div>
             </div>
-            <br>
-        </section>
-        <section id="section2">
-          <h2>Printed Collateral</h2>
-          <div class="section-container">
-            <div class="image-container">
-              <img src="graphic design work\coronavirus.png" class="first-section-img" alt="coronavirus.png">
+            <div class="caption">
+              <h5>Covide-PSA</h5>
+              <p>An informative PSA infographic suitable for digital display, print as a flyer, or poster. Featuring graphs, charts, data, and illustrations. The goal of this poster was to offer a visually engaging presentation of relevant
+                information. </p>
+            </div>
+          </div>
+          <br>
+
+
+          <div class="image-container">
+            <img src="graphic design work\cvnp.jpg" class="graphicdesign-img" alt="graphic design work\cvnp.jpg">
+            <div class="portfolio-button-wrap">
               <span class="magnify-icon" onclick="toggleModal(event)">
                 <p class="enlarge">ENLARGE</p>
                 <i class="fa fa-expand"></i>
               </span>
-              <div class="caption">
-                <h5>Vax-PSA</h5>
-                <p>An informative PSA infographic suitable for digital display, print as a flyer, or poster. Featuring graphs, charts, data, and illustrations. The goal of this poster was to offer a visually engaging presentation of relevant information. </p>
-              </div>
             </div>
-            <br>
-            <div class="image-container">
-              <img src="graphic design work\cvnp.jpg" class="graphicdesign-img" alt="graphic design work\cvnp.jpg">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Cuyahoga Valley National Park Brochure</h5>
-                <p>A tri-fold brochure for Cuyahoga Valley National Park featuring an illustrated map of the park, original photos, informative background information, and highlights of the park's features.</p>
-                <br>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="graphic design work\menu.png" class="graphicdesign-img" alt="menu.png">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Gelato Grotto Menu</h5>
-                <p>A mock-up gelato menu designed for an imaginary restaurant. Custom illustrations were made using Adobe Illustrator.</p>
-                <br>
-              </div>
-            </div>
-            <div class="link-wrap">
-              <a class=“portfolio-button” href="graphic design work\CMRI_sample.pdf" download="CMRI_sample.pdf">CMRI Book PDF </a>
+            <div class="caption">
+              <h5>Cuyahoga Valley National Park Brochure</h5>
+              <p>A tri-fold brochure for Cuyahoga Valley National Park featuring an illustrated map of the park, original photos, informative background information, and highlights of the park's features.</p>
               <br>
-              <div class="caption">
-                <h5>Cardiovascular Magnetic Resonance Book</h5>
-                <p>A sample of an 100-page Cardiovascular Magnetic Resonance book I designed for the Cleveland Clinic. Enriched with infographics, custom drawings, and tables, the goal of this project was to facilitate training for new CMRI technicians. I linked a sample of the first few sections of the book above.</p>
-                <br>
-              </div>
             </div>
-            <div class="link-wrap">
+          </div>
+
+          <div class="image-container">
+            <img src="graphic design work\menu.png" class="graphicdesign-img" alt="menu.png">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Gelato Grotto Menu</h5>
+              <p>A mock-up gelato menu designed for an imaginary restaurant. Custom illustrations were made using Adobe Illustrator.</p>
+              <br>
+            </div>
+          </div>
+
+          <div class="link-wrap">
+            <img src="graphic design work\cmri.png" class="graphicdesign-img" alt="cmri.png">
+            <div class="portfolio-button-wrap">
+              <a class=“portfolio-button” href="graphic design work\CMRI_sample.pdf" download="CMRI_sample.pdf">CMRI Book Sample</a>
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+
+            </div>
+
+            <div class="caption">
+              <h5>Cardiovascular Magnetic Resonance book</h5>
+              <p>A sample of an 100-page Cardiovascular Magnetic Resonance book I designed for the Cleveland Clinic. Enriched with infographics, custom drawings, and tables, the goal of this project was to facilitate training for new CMRI
+                technicians. I linked a sample of the first few sections of the book above.</p>
+              <br>
+            </div>
+          </div>
+
+
+
+          <div class="link-wrap">
+            <img src="graphic design work\aogcover.jpg" class="graphicdesign-img" alt="aogcover.jpeg">
+            <div class="portfolio-button-wrap">
               <a class=“portfolio-button” href="graphic design work\The Art Of Graffit_BOOK.pdf" download="The Art Of Graffit_BOOK.pdf">The Art of Graffitti PDF </a>
+
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+
+            <div class="caption">
+
+              <h5>The Art of Grafitti Book</h5>
+              <p>“The Art of Graffiti” is a magazine-style book that offers a concise exploration into street art through the lens of five iconic artists: Banksy, EGS, HORFE, OSGEMEOS, and Stephen Powers. Enriched with custom illustrations, images
+                enhanced in photoshop, and a artistic layout.</p>
               <br>
-              <div class="caption">
-                <h5>The Art of Grafitti Book</h5>
-                <p>“The Art of Graffiti” is a magazine-style book that offers a concise exploration into street art through the lens of five iconic artists: Banksy, EGS, HORFE, OSGEMEOS, and Stephen Powers. Enriched with custom illustrations, images enhanced in photoshop, and a artistic layout.</p>
-                <br>
-              </div>
-            </div>
-        </section>
-        <section id="section3">
-          <h2>Brand Design</h2>
-          <div class="section-container">
-            <div class="image-container">
-              <img src="graphic design work\stationary.jpg" class="first-section-img" alt="stationary.jpg">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Carissa's Creations Stationary</h5>
-                <p>Custom stationery mockups designed for my own brand, Carissa's Creations, including a newsletter, envelope, business card, pencils, and folder.</p>
-                <br>
-              </div>
-            </div>
-            <div class="scrollable-image-container">
-              <div class="vertical-scrollable-image">
-                <img src="graphic design work\splendid.png" alt="splendid.png">
-              </div>
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Splendid Smoothies Product Extension</h5>
-                <p>A mockup of a brand extension logo and package design for Yoplait, including a color guide, custom font, and 3D examples of how this packaging would look once produced. 3d Models were made using Adobe Dimensions. Scroll to see full graphic.</p>
-                <br>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="graphic design work\jht-final-logos.png" class="graphicdesign-img" alt="jht-final-logos.png">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Just Health Technologies Logo Design, Adobe Illustrator</h5>
-                <p>A logo design created in Adobe Illustrator for a client's startup company, which includes a color palette and variations of how the logo would be displayed. Additionally, I have included an example of the logo that the client had embroidered onto a hat.</p>
-                <br>
-              </div>
-            </div>
-        </section>
-        <section id="section4">
-          <h2>Package Design</h2>
-          <div class="section-container">
-            <div class="image-container">
-              <img src="graphic design work\tea.jpg" class="first-section-img" alt="tea.jpg">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Tea Packaging</h5>
-                <p>A tea packaging design made in Illustrator featuring three flavor prototypes. it includes custom tea bags with tags, boxes, and a large container with a matching mug. It was photographed and edited in Photoshop to showcase how it would appear on a shelf.</p>
-                <br>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="graphic design work\candy.jpg" class="graphicdesign-img" alt="candy.jpg">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Candy Packaging</h5>
-                <p>A candy packaging design made in Illustrator featuring three flavor prototypes. Each flavor has its own unique wrapper design and my images were enhanced in Photoshop.</p>
-                <br>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="graphic design work\salsapackage.png" class="graphicdesign-img" alt="salsapackage.png">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Salsa Packaging</h5>
-                <p>A salsa packaging design made in Illustrator featuring three flavor prototypes. I edited my images in Photoshop and photographed an example of someone pouring salsa out of the jar.</p>
-                <br>
-              </div>
-            </div>
-        </section>
-        <section id="section5">
-          <h2>Illustration Design</h2>
-          <div class="section-container">
-            <div class="image-container">
-              <img src="graphic design work\goose.gif" class="first-section-img" alt="goose.gif">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Goose GIF</h5>
-                <p>An animated GIF of a flying goose drawn in Photoshop.</p>
-                <br>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="graphic design work\heart.jpg" class="graphicdesign-img" alt="heart.jpg">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Heart Chart</h5>
-                <p>An anatomically correct and labeled diagram of the human heart. It was made using Adobe Illustrator for the CMRI book I linked above in "Printed Collateral." </p>
-                <br>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="homeimages\bsbbb.jpg" class="graphicdesign-img" alt="bsbbb.jpg">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Pixel Art Beach</h5>
-                <p>A pixel painting of a beachside restaurant.</p>
-                <br>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="graphic design work\pixelart_forest.jpg" class="graphicdesign-img" alt="pixelart_forest.jpg">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Pixel Art Forest</h5>
-                <p>A pixel painting of a forest drawn in Procreate.</p>
-                <br>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="graphic design work\swamp.jpg" class="graphicdesign-img" alt="swamp.jpg">
-              <span class="magnify-icon" onclick="toggleModal(event)">
-                <p class="enlarge">ENLARGE</p>
-                <i class="fa fa-expand"></i>
-              </span>
-              <div class="caption">
-                <h5>Swamp Drawing</h5>
-                <p>A digital illustration of a swamp using various brushes and effects. Made using Procreate.</p>
-                <br>
-              </div>
-            </div>
-        </section>
-        <section id="section6">
-          <h2>UX Design</h2>
-          <div class="section-container">
-            <div class="link-wrap-1">
-              <a class=“portfolio-button” href="https://xd.adobe.com/view/cff8d239-6d63-4b49-97ac-5724106d5dd3-9aab/?fullscreen">MenuMaker Dashboard <i class="gg-link"></i>
-              </a>
-              <div class="caption">
-                <h5>MenuMaker Dashboard</h5>
-                <p>An interactive website prototype I designed for Menu-Maker using tools like Adobe XD, Illustrator, and Figma.</p>
-                <br>
-              </div>
-            </div>
-            <div class="link-wrap">
-              <a class=“portfolio-button” href="https://xd.adobe.com/view/a8881009-1900-4a72-b4f8-84de8ffa6afa-fddb/">Gas Station Kiosk <i class="gg-link"></i>
-              </a>
-              <div class="caption">
-                <h5>Gas Station Kiosk</h5>
-                <p>A prototype for a gas station kiosk. It is user-friendly, simple to navigate, and provides the user with various payment options, including Apple Pay.</p>
-                <br>
-              </div>
             </div>
           </div>
-        </section>
-      </div>
+      </section>
+
+      <section id="section3">
+        <h2>Brand Design</h2>
+        <div class="section-container">
+          <div class="image-container">
+            <img src="graphic design work\stationary.jpg" class="first-section-img" alt="stationary.jpg">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Carissa's Creations Stationary</h5>
+              <p>Custom stationery mockups designed for my own brand, Carissa's Creations, including a newsletter, envelope, business card, pencils, and folder.</p>
+              <br>
+            </div>
+          </div>
+          <div class="scrollable-image-container">
+            <div class="vertical-scrollable-image">
+              <img src="graphic design work\splendid.png" alt="splendid.png">
+            </div>
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Splendid Smoothies Product Extension</h5>
+              <p>A mockup of a brand extension logo and package design for Yoplait, including a color guide, custom font, and 3D examples of how this packaging would look once produced. 3d Models were made using Adobe Dimensions. Scroll to see full
+                graphic.</p>
+              <br>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="graphic design work\jht-final-logos.png" class="graphicdesign-img" alt="jht-final-logos.png">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Just Health Technologies Logo Design, Adobe Illustrator</h5>
+              <p>A logo design created in Adobe Illustrator for a client's startup company, which includes a color palette and variations of how the logo would be displayed. Additionally, I have included an example of the logo that the client had
+                embroidered onto a hat.</p>
+              <br>
+            </div>
+          </div>
+      </section>
+
+
+      <section id="section4">
+        <h2>Package Design</h2>
+        <div class="section-container">
+          <div class="image-container">
+            <img src="graphic design work\tea.jpg" class="first-section-img" alt="tea.jpg">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Tea Packaging</h5>
+              <p>A tea packaging design made in Illustrator featuring three flavor prototypes. it includes custom tea bags with tags, boxes, and a large container with a matching mug. It was photographed and edited in Photoshop to showcase how it
+                would appear on a shelf.</p>
+              <br>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="graphic design work\candy.jpg" class="graphicdesign-img" alt="candy.jpg">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Candy Packaging</h5>
+              <p>A candy packaging design made in Illustrator featuring three flavor prototypes. Each flavor has its own unique wrapper design and my images were enhanced in Photoshop.</p>
+              <br>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="graphic design work\salsapackage.png" class="graphicdesign-img" alt="salsapackage.png">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Salsa Packaging</h5>
+              <p>A salsa packaging design made in Illustrator featuring three flavor prototypes. I edited my images in Photoshop and photographed an example of someone pouring salsa out of the jar.</p>
+              <br>
+            </div>
+          </div>
+      </section>
+      <section id="section5">
+        <h2>Illustration Design</h2>
+        <div class="section-container">
+          <div class="image-container">
+            <img src="graphic design work\goose.gif" class="first-section-img" alt="goose.gif">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Goose GIF</h5>
+              <p>An animated GIF of a flying goose drawn in Photoshop.</p>
+              <br>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="graphic design work\heart.jpg" class="graphicdesign-img" alt="heart.jpg">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Heart Chart</h5>
+              <p>An anatomically correct and labeled diagram of the human heart. It was made using Adobe Illustrator for the CMRI book I linked above in "Printed Collateral." </p>
+              <br>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="homeimages\bsbbb.jpg" class="graphicdesign-img" alt="bsbbb.jpg">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Pixel Art Beach</h5>
+              <p>A pixel painting of a beachside restaurant.</p>
+              <br>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="graphic design work\pixelart_forest.jpg" class="graphicdesign-img" alt="pixelart_forest.jpg">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Pixel Art Forest</h5>
+              <p>A pixel painting of a forest drawn in Procreate.</p>
+              <br>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="graphic design work\swamp.jpg" class="graphicdesign-img" alt="swamp.jpg">
+            <div class="portfolio-button-wrap">
+              <span class="magnify-icon" onclick="toggleModal(event)">
+                <p class="enlarge">ENLARGE</p>
+                <i class="fa fa-expand"></i>
+              </span>
+            </div>
+            <div class="caption">
+              <h5>Swamp Drawing</h5>
+              <p>A digital illustration of a swamp using various brushes and effects. Made using Procreate.</p>
+              <br>
+            </div>
+          </div>
+      </section>
+      <section id="section6">
+        <h2>UX Design</h2>
+        <div class="section-container">
+          <div class="link-wrap-1">
+            <a class=“portfolio-button” href="https://xd.adobe.com/view/cff8d239-6d63-4b49-97ac-5724106d5dd3-9aab/?fullscreen">MenuMaker Dashboard <i class="gg-link"></i>
+            </a>
+            <div class="caption">
+              <h5>MenuMaker Dashboard</h5>
+              <p>An interactive website prototype I designed for Menu-Maker using tools like Adobe XD, Illustrator, and Figma.</p>
+              <br>
+            </div>
+          </div>
+          <div class="link-wrap-1">
+            <a class=“portfolio-button” href="https://xd.adobe.com/view/a8881009-1900-4a72-b4f8-84de8ffa6afa-fddb/">Gas Station Kiosk <i class="gg-link"></i>
+            </a>
+            <div class="caption">
+              <h5>Gas Station Kiosk</h5>
+              <p>A prototype for a gas station kiosk. It is user-friendly, simple to navigate, and provides the user with various payment options, including Apple Pay.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <!-- Footer -->
-    <div class="footer">
-      <div class="socials">
-        <ul class="icons">
-          <li>
-            <a href="https://carissacancreate.etsy.com" class="fa fa-etsy"></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/jcarissaj/?hl=en" class="fa fa-instagram"></a>
-          </li>
-          <li>
-            <a href="https://github.com/justcarissa" class="fa fa-github"></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/carissajust" class="fa fa-linkedin"></a>
-          </li>
-          <li>
-            <a href="https://www.pinterest.com/carissarjust/_saved/" class="fa fa-pinterest"></a>
-          </li>
-        </ul>
-      </div>
-      <p>2023 Carissa's Creations&copy</p>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="socials">
+      <ul class="icons">
+        <li>
+          <a href="https://carissacancreate.etsy.com" class="fa fa-etsy"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jcarissaj/?hl=en" class="fa fa-instagram"></a>
+        </li>
+        <li>
+          <a href="https://github.com/justcarissa" class="fa fa-github"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/carissajust" class="fa fa-linkedin"></a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/carissarjust/_saved/" class="fa fa-pinterest"></a>
+        </li>
+      </ul>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <p>2023 Carissa's Creations&copy</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
