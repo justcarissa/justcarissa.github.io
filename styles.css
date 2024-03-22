@@ -1094,7 +1094,7 @@ p.thick {
 .main-gallery .link-wrap a {
   border: solid 2px #feea98;
   color: #feea98;
-  padding: 5px;
+  padding: 3px 5px 5px 5px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 14px;
