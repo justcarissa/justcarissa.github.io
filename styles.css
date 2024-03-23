@@ -9,7 +9,7 @@
 header {
   width: 100%;
   padding: 40px 40px 40px 0px;
-  height: 210px;
+  height: 220px;
   background-color: #29373b;
   display: flex;
   flex-direction: column;
@@ -64,12 +64,10 @@ header ul a {
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 18px;
-  padding: 3px;
+  padding: 10px;
   line-height: 22px;
   text-align: center;
-  margin-right: 20px;
-  padding-right: 15px;
-  padding-left: 15px;
+  margin-right: 40px;
 }
 
 .selected a {
@@ -466,7 +464,6 @@ h2 {
   background-color: #feea98;
   border-radius: 5px;
   color: #29373b;
-  border: solid 2px #fbd25e;
 }
 
 @media (min-width: 601px) {
@@ -477,7 +474,7 @@ h2 {
 
   .fixed-sections {
     position: fixed;
-    top: 40px;
+    top: 300px;
     display: flex;
     width: 30%;
   }
@@ -488,16 +485,16 @@ h2 {
     list-style: none;
     background-color: none;
     position: absolute;
-    margin: 20px 0px 0px 0px;
-    padding: 20px;
+    padding: 0px;
     z-index: 4;
-    border-top: none;
+    border-top: solid 3px white;
     flex-direction: column;
   }
 
   .fixed-sections .sub-menu li a {
     margin: 0;
-    margin-top: 2px;
+    padding-top: 30px;
+    padding-left: 40px;
     list-style: none;
     color: #29373b;
     background-color: #f1f1f1;
@@ -510,13 +507,15 @@ h2 {
   }
 
   .fixed-sections .sub-menu li a:hover {
-    border-bottom: solid 3px #feea98;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(254, 234, 152, 0.8);
+  }
+
+  .fixed-sections .sub-menu a {
+    padding-bottom: 30px;
   }
 
   .fixed-sections .sub-menu li {
     margin: 0;
-    padding-bottom: 25px;
   }
 
   .fixed-sections a {
@@ -816,31 +815,6 @@ h5 {
   background-color: #29373b;
 }
 
-/* Download PDF Portfolio Item*/
-.link-wrap {
-  width: 100%;
-}
-
-.link-wrap-1 {
-  width: 100%;
-  margin-top: 30px;
-}
-
-.link-wrap-1 a {
-  border: solid 2px #feea98;
-  color: #29373b;
-  padding: 5px;
-  border-radius: 3px;
-  text-decoration: none;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  background-color: white;
-}
-
-.link-wrap-1 a:hover {
-  background-color: #feea98;
-}
-
 /*~*~ Media query for responsive sections *~*~*/
 @media screen and (max-width: 600px) {
   .caption {
@@ -1021,10 +995,14 @@ p.thick {
 .fa-send {
   text-decoration: none;
   color: #29373b;
-  background-color: #feea98;
   font-weight: bold;
   border-radius: 5px;
   float: right;
+}
+
+.main-services .fa-download {
+  padding: 7px;
+  margin-bottom: 10px;
 }
 
 .fa-download,
@@ -1094,8 +1072,8 @@ p.thick {
 .main-gallery .link-wrap a {
   border: solid 2px #feea98;
   color: white;
-	font-weight: bold;
-  padding: 3px 5px 5px 5px;
+  font-weight: bold;
+  padding: 5px 5px 3px 5px;
   border-radius: 3px;
   text-decoration: none;
   font-size: 14px;
@@ -1131,6 +1109,32 @@ p.thick {
 .caption h5 {
   padding-bottom: 2px;
   margin-top: 30px;
+}
+
+/* Download PDF Portfolio Item*/
+.link-wrap {
+  width: 100%;
+}
+
+.link-wrap-1 {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.link-wrap-1 a {
+  border: solid 2px #feea98;
+  color: #29373b;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  background-color: white;
+}
+
+.link-wrap-1 a:hover {
+  background-color: #feea98;
 }
 
 /*~*~ Media query for responsive sections *~*~*/
