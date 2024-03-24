@@ -183,12 +183,15 @@ h3 {
   margin: 0px;
 }
 
-.side a {
-  color: #40757e;
+.side a,
+.caption a {
+  color: #29373b;
+  font-weight: bold;
 }
 
-.side a:hover {
-  background-color: rgba(64, 117, 126, 0.2);
+.side a:hover,
+.caption a:hover  {
+  background-color: rgba(254, 234, 152, 0.8);
 }
 
 body {
@@ -205,10 +208,6 @@ body p {
   font-size: 16px;
 }
 
-.main p {
-  margin-bottom: 0px;
-  font-size: 15px;
-}
 
 /* IMG of Me */
 img {
