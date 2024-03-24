@@ -1373,9 +1373,8 @@ textarea {
   }
 
   .main p {
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 14px;
+    margin-top: 20px;
+  margin-bottom: 20px;
   }
 
   .side p {
