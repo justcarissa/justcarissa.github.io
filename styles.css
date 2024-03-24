@@ -227,7 +227,7 @@ img {
 .top-intro {
   flex: 30%;
   background-color: #f1f1f1;
-  padding: 40px;
+  padding: 40px 30px 40px 40px;
 }
 
 /* Main INDEX Content */
@@ -474,9 +474,9 @@ h2 {
 
   .fixed-sections {
     position: fixed;
-    top: 300px;
+    top: 40px;
     display: flex;
-    width: 30%;
+    max-width: 30%;
   }
 
   .fixed-sections .sub-menu {
@@ -485,16 +485,14 @@ h2 {
     list-style: none;
     background-color: none;
     position: absolute;
-    padding: 0px;
+  padding: 0px;
     z-index: 4;
     border-top: solid 3px white;
     flex-direction: column;
   }
 
   .fixed-sections .sub-menu li a {
-    margin: 0;
-    padding-top: 30px;
-    padding-left: 40px;
+    padding: 20px 20px 20px 20px;
     list-style: none;
     color: #29373b;
     background-color: #f1f1f1;
@@ -510,16 +508,12 @@ h2 {
     background-color: rgba(254, 234, 152, 0.8);
   }
 
-  .fixed-sections .sub-menu a {
-    padding-bottom: 30px;
-  }
-
   .fixed-sections .sub-menu li {
     margin: 0;
   }
 
   .fixed-sections a {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 19px;
     display: flex;
     font-weight: bold;
