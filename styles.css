@@ -714,8 +714,8 @@ h2 {
   z-index: 0px;
 }
 
-.section-container {
-  background-color: #f1f1f1;
+.main-gallery section {
+  background-color: white;
   padding: 25px;
   margin-bottom: 80px;
   border-radius: 5px;
@@ -1366,7 +1366,6 @@ textarea {
   }
 
   .section-container {
-    background-color: #f1f1f1;
     padding: 40px 40px 20px 40px;
     margin-bottom: 100px;
     border-radius: 5px;
