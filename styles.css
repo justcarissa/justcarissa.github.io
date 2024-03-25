@@ -1214,7 +1214,7 @@ p.thick {
   }
 
   .send-email-button {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .services-button {
@@ -1351,7 +1351,10 @@ textarea {
 /* Large Screen Special Queries */
 @media screen and (min-width: 1400px) {
 
-  .main-gallery,
+  .main-gallery{
+    padding: 60px 180px 40px 180px;
+  }
+
   .main {
     padding: 80px 180px 40px 180px;
   }
@@ -1398,7 +1401,7 @@ textarea {
   }
 
   .main-services {
-    padding-top: 40px;
+    padding-top: 60px;
     margin-bottom: 80px;
   }
 
@@ -1410,6 +1413,7 @@ textarea {
 
   .form-content {
     padding: 40px;
+    margin-top: 60px;
   }
 
   .modal {
@@ -1417,7 +1421,7 @@ textarea {
   }
 
   .send-email-button {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
