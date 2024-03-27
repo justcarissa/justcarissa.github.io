@@ -1,3 +1,4 @@
+
 // Function to toggle mobile menu
 function toggleMobileMenu(icon) {
   icon.classList.toggle("open");
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   allImages.forEach(function(image) {
     image.addEventListener('click', function() {
-      var imageContainer = event.target.closest('.image-container, .scrollable-image-container');
+      var imageContainer = event.target.closest('.image-container, .scrollable-image-container .link-wrap');
       var image = imageContainer.querySelector('img');
       var caption = imageContainer.querySelector('.caption');
 
@@ -96,14 +97,14 @@ function toggleModal(event) {
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("modalCaption");
 
-  var imageContainer = event.target.closest('.image-container, scrollable-image-container, .link-wrap');
+  var imageContainer = event.target.closest('.image-container, .scrollable-image-container, .link-wrap');
   var image = imageContainer.querySelector('img');
   var caption = imageContainer.querySelector('.caption');
 
   modalImg.src = image.src;
   captionText.innerHTML = caption ? caption.innerHTML : '';
   modal.style.display = "block";
-
+  
   // Add modal-open class to body to disable scrolling and clicking
   document.body.classList.add('modal-open');
 
