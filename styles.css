@@ -190,7 +190,7 @@ h3 {
 }
 
 .side a:hover,
-.caption a:hover  {
+.caption a:hover {
   background-color: rgba(254, 234, 152, 0.8);
 }
 
@@ -207,7 +207,6 @@ body p {
   font-weight: lighter;
   font-size: 16px;
 }
-
 
 /* IMG of Me */
 img {
@@ -233,7 +232,7 @@ img {
 .main {
   flex: 70%;
   background-color: white;
-  padding: 40px;
+  padding: 0px 90px 90px 90px;
   margin-top: 0px;
   z-index: 0px;
 }
@@ -254,7 +253,7 @@ h2 {
 /* Image SLideshow */
 .section-container {
   max-width: 100%;
-  margin: 40px auto 0px auto;
+  margin: 80px auto 0px auto;
 }
 
 .slideshow-container {
@@ -390,14 +389,8 @@ h2 {
     display: none;
   }
 
-  .section-container {
-    margin-top: 20px;
-    max-width: 100%;
-  }
-
   h2 {
     font-size: 26px;
-    margin-top: 30px;
     font-weight: normal;
   }
 
@@ -484,7 +477,7 @@ h2 {
     list-style: none;
     background-color: none;
     position: absolute;
-  padding: 0px;
+    padding: 0px;
     z-index: 4;
     border-top: solid 3px white;
     flex-direction: column;
@@ -709,20 +702,23 @@ h2 {
 .main-gallery {
   flex: 70%;
   background-color: white;
-  padding: 40px;
-  margin-top: 0px;
+  margin-top: 20px;
   z-index: 0px;
+}
+
+h2 {
+  margin-bottom: 40px;
 }
 
 .main-gallery section {
   background-color: white;
-  padding: 25px;
-  margin-bottom: 80px;
+  padding: 60px 90px 60px 90px;
+  margin-bottom: 40px;
   border-radius: 5px;
 }
 
-.main .section-container {
-margin-bottom: 60px;
+.section-container {
+  margin-bottom: 60px;
 }
 
 .page-intro {
@@ -820,7 +816,7 @@ h5 {
 
   .caption p {
     font-size: 14.5px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     letter-spacing: 0.6px;
     line-height: 19px;
     padding-bottom: 10px;
@@ -840,8 +836,7 @@ h5 {
 
   .section-container {
     background-color: white;
-    padding: 30px 0px 10px 0px;
-    margin-bottom: 80px;
+    padding: 0px 0px 0px 0px;
     border-radius: 5px;
   }
 
@@ -1094,13 +1089,12 @@ p.thick {
 .gg-link {
   display: inline-block;
   background: currentColor;
-  margin: 6px 4px 4px 8px;
 }
 
 .caption p {
   margin-bottom: 0px;
   padding-bottom: 10px;
-  border-bottom: solid 2px rgba(0, 0, 0, 0.4);
+  border-bottom: solid 3px #f1f1f1;
 }
 
 .caption h5 {
@@ -1111,11 +1105,16 @@ p.thick {
 /* Download PDF Portfolio Item*/
 .link-wrap {
   width: 100%;
+  padding-top: 80px;
+}
+
+.link-wrap {
+  width: 100%;
+  padding-top: 0px;
 }
 
 .link-wrap-1 {
   width: 100%;
-  margin-top: 30px;
 }
 
 .link-wrap-1 a {
@@ -1139,6 +1138,10 @@ p.thick {
   .modal .caption h5 {
     padding-top: 18px;
     margin-top: 0px;
+  }
+
+  h2 {
+    line-height: 28px;
   }
 
   .modal .caption p {
@@ -1167,15 +1170,19 @@ p.thick {
 
   .main-services {
     padding: 20px;
+    margin-top: 40px;
   }
 
-  .main,
-  .main-gallery {
-    padding: 20px;
+  .main {
+    padding: 30px;
+  }
+
+  .main-gallery section {
+    padding: 30px;
   }
 
   .side {
-    padding: 40px 20px 40px 20px;
+    padding: 40px 30px 40px 30px;
   }
 
   .side p {
@@ -1354,17 +1361,17 @@ textarea {
 
 /* Large Screen Special Queries */
 @media screen and (min-width: 1400px) {
-
-  .main-gallery{
-    padding: 60px 180px 40px 180px;
+  .main-gallery {
+    padding: 60px 0px 0px 0px;
   }
 
   .main {
-    padding: 80px 180px 40px 180px;
+    padding: 0px;
   }
 
-  .graphicdesign-img {
-    padding-top: 80px;
+  .graphicdesign-img,
+  .scrollable-image-container {
+    padding-top: 60px;
   }
 
   /*Sctollable Images*/
@@ -1373,14 +1380,19 @@ textarea {
   }
 
   .section-container {
-    padding: 40px 40px 20px 40px;
-    margin-bottom: 100px;
+    padding: 80px 260px 80px 260px;
+    margin: 0px;
+    border-radius: 5px;
+  }
+
+  .main-gallery section {
+    padding: 0px 260px 100px 260px;
+    margin: 0px;
     border-radius: 5px;
   }
 
   .main p {
     margin-top: 20px;
-  margin-bottom: 20px;
   }
 
   .side p {
@@ -1389,15 +1401,6 @@ textarea {
 
   .side {
     padding: 40px 40px 20px 40px;
-  }
-
-  .link-wrap {
-    padding-top: 60px;
-  }
-
-  .link-wrap-1 {
-    padding-top: 0px;
-    width: 100%;
   }
 
   .contact {
