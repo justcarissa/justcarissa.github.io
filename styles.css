@@ -1331,7 +1331,7 @@ textarea {
 }
 
 /* Large Screen Special Queries */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1600px) {
   .main-gallery {
     padding: 40px 0px 0px 0px;
   }
