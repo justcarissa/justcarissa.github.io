@@ -1,154 +1,162 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=360, initial-scale=1.0">
-    <title>Services</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <header>
-      <div class="header-container">
-        <img id="logo" src="homeimages\logo.png" alt="logo.png" />
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-          <ul>
-            
-            <li>
-              <a href="index.html">ABOUT</a>
-            </li>
-          
-            <li>
-              <a href="graphicdesign.html">PORTFOLIO</a>
-            </li>
-        
-            <li class="selected">
-              <a href="services.html">SERVICES</a>
-            </li>
-          
-            <li>
-              <a href="form.html">CONTACT</a>
-            </li>
-          
-          </ul>
-        </nav>
-      </div>
-      <!-- Container for the hamburger menu -->
-      <div class="mobile-menu-container">
-        <nav id="hamburger-icon" onclick="toggleMobileMenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </nav>
-        <!-- Mobile Menu -->
-        <ul class="mobile-menu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=360, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img id="logo" src="homeimages\logo.png" alt="logo.png" />
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <ul>
+
           <li>
             <a href="index.html">ABOUT</a>
           </li>
+
           <li>
             <a href="graphicdesign.html">PORTFOLIO</a>
           </li>
+
           <li class="selected">
             <a href="services.html">SERVICES</a>
           </li>
+
           <li>
             <a href="form.html">CONTACT</a>
           </li>
+
         </ul>
-      </div>
-    </header>
-    <!-- The flexible grid (content) -->
-    <div class="row">
-      <div class="main-services">
-        <h2>Services & Prices</h2>
-        <button class="services-button">
-          <a href="graphic design work\carissascreations_designservices_pricelist.pdf" download="carissascreations_designservices_pricelist.pdf">
-            <p>Download PDF</p>
-            <i class="fa fa-download"></i>
-          </a>
-        </button>
-        <table id="services">
-          <tr>
-            <th>Service</th>
-            <th>$/HR</th>
-            <th>Details</th>
-          </tr>
-          <tr>
-            <td class="thick">Logo Design</td>
-            <td>$30/hr</td>
-            <td>My process involves understanding your brand values, target audience, and industry to craft a logo that effectively communicates the essence of your brand. This service includes concept development, design iterations, and finalizing a logo that resonates with your business identity.</td>
-          </tr>
-          <tr>
-            <td class="thick">Print Design</td>
-            <td class="gray">$30/hr</td>
-            <td>Print Design encompasses a variety of materials like brochures, flyers, marketing collateral, books, and business cards. My approach is to craft engaging layouts, choose appealing color schemes, and select typography that harmonizes with your brand identity or the specific aims of your project.</td>
-          </tr>
-          <tr>
-            <td class="thick">UI Design & Web Development</td>
-            <td class="gray">$40/hr</td>
-            <td>My UI Design and web development services aim to create intuitive web layouts tailored to your brand's idenity and objectives. <br>
-              <h4>This includes:</h4>
-              <ol type="1">
-                <li>
-                  <p class="thick">User Interface (UI) Design:</p> Involves planning and conceptualization for mobile and/or desktop web layouts using tools like Figma or Adobe XD to create wireframes and mockups.
-                </li>
-                <li>
-                  <p class="thick">Front-end Development:</p> Involves translating designs into code, utilizing HTML for content structure, CSS for visually appealing styling and implementing responsive design, and JavaScript for interactivity. Git is employed for version control, enabling collaborative development and change tracking.
-                </li>
-                <li>
-                  <p class="thick">Functionality Enhancements:</p> Integration of additional features, such as contact forms and galleries, aimed at improving user engagement.
-                </li>
-              </ol>
-          </tr>
-          <tr>
-            <td class="thick">Packaging Design</td>
-            <td class="gray">$30/hr</td>
-            <td>My packaging design process begins with a thorough consultation to grasp your brand identity, target audience, and product needs. Includes conceptualization of initial designs, revisions and creating detailed mockups and 3D renderings. </td>
-          </tr>
-          <tr>
-            <td class="thick">Illustration Services</td>
-            <td class="gray">$35/hr</td>
-            <td>My process for illustration design involves a discussion to understand your specific needs, style preferences, intended use, and demographic.</td>
-          </tr>
-          <tr>
-            <td class="thick">Photo Retouching</td>
-            <td class="gray">$25/hr</td>
-            <td>My process for image retouching includes a discussion to understand your specific needs, style preferences, intended use, and demographic. Includes enhancements and retouching edited with Adobe Photoshop for print or web use.</td>
-          </tr>
-          <tr>
-            <td class="thick">Vectorization of Artwork</td>
-            <td class="gray">$25/hr</td>
-            <td>My process for vectorization involves converting raster images (such as JPEGs or PNGs) into scalable vector files. I carefully trace the outlines and shapes of the original artwork, ensuring that the vectorized version retains the same visual characteristics and level of detail. This process is particularly useful for logos, illustrations, and graphic prints that need to be resized without losing quality.</td>
-          </tr>
-        </table>
-      </div>
+      </nav>
     </div>
+    <!-- Container for the hamburger menu -->
+    <div class="mobile-menu-container">
+      <nav id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </nav>
+      <!-- Mobile Menu -->
+      <ul class="mobile-menu">
+        <li>
+          <a href="index.html">ABOUT</a>
+        </li>
+        <li>
+          <a href="graphicdesign.html">PORTFOLIO</a>
+        </li>
+        <li class="selected">
+          <a href="services.html">SERVICES</a>
+        </li>
+        <li>
+          <a href="form.html">CONTACT</a>
+        </li>
+      </ul>
     </div>
-    <!-- Footer -->
-    <div class="footer">
-      <div class="socials">
-        <ul class="icons">
-          <li>
-            <a href="https://carissacancreate.etsy.com" class="fa fa-etsy"></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/jcarissaj/?hl=en" class="fa fa-instagram"></a>
-          </li>
-          <li>
-            <a href="https://github.com/justcarissa" class="fa fa-github"></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/carissajust" class="fa fa-linkedin"></a>
-          </li>
-          <li>
-            <a href="https://www.pinterest.com/carissarjust/_saved/" class="fa fa-pinterest"></a>
-          </li>
-        </ul>
-      </div>
-      <p>2023 Carissa's Creations&copy</p>
+  </header>
+  <!-- The flexible grid (content) -->
+  <div class="row">
+    <div class="main-services">
+      <h2>Services & Prices</h2>
+      <button class="services-button">
+        <a href="graphic design work\carissascreations_designservices_pricelist.pdf" download="carissascreations_designservices_pricelist.pdf">
+          <p>Download PDF</p>
+          <i class="fa fa-download"></i>
+        </a>
+      </button>
+      <table id="services">
+        <tr>
+          <th>Service</th>
+          <th>$/HR</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td class="thick">Logo Design</td>
+          <td>$30/hr</td>
+          <td>My process involves understanding your brand values, target audience, and industry to craft a logo that effectively communicates the essence of your brand. This service includes concept development, design iterations, and finalizing a
+            logo that resonates with your business identity.</td>
+        </tr>
+        <tr>
+          <td class="thick">Print Design</td>
+          <td class="gray">$30/hr</td>
+          <td>Print Design encompasses a variety of materials like brochures, flyers, marketing collateral, books, and business cards. My approach is to craft engaging layouts, choose appealing color schemes, and select typography that harmonizes
+            with your brand identity or the specific aims of your project.</td>
+        </tr>
+        <tr>
+          <td class="thick">UI Design & Web Development</td>
+          <td class="gray">$40/hr</td>
+          <td>My UI Design and web development services aim to create intuitive web layouts tailored to your brand's idenity and objectives. <br>
+            <h4>This includes:</h4>
+            <ol type="1">
+              <li>
+                <p class="thick">User Interface (UI) Design:</p> Involves planning and conceptualization for mobile and/or desktop web layouts using tools like Figma or Adobe XD to create wireframes and mockups.
+              </li>
+              <li>
+                <p class="thick">Front-end Development:</p> Involves translating designs into code, utilizing HTML for content structure, CSS for visually appealing styling and implementing responsive design, and JavaScript for interactivity. Git is
+                employed for version control, enabling collaborative development and change tracking.
+              </li>
+              <li>
+                <p class="thick">Functionality Enhancements:</p> Integration of additional features, such as contact forms and galleries, aimed at improving user engagement.
+              </li>
+            </ol>
+        </tr>
+        <tr>
+          <td class="thick">Packaging Design</td>
+          <td class="gray">$30/hr</td>
+          <td>My packaging design process begins with a thorough consultation to grasp your brand identity, target audience, and product needs. Includes conceptualization of initial designs, revisions and creating detailed mockups and 3D renderings.
+          </td>
+        </tr>
+        <tr>
+          <td class="thick">Illustration Services</td>
+          <td class="gray">$35/hr</td>
+          <td>My process for illustration design involves a discussion to understand your specific needs, style preferences, intended use, and demographic.</td>
+        </tr>
+        <tr>
+          <td class="thick">Photo Retouching</td>
+          <td class="gray">$25/hr</td>
+          <td>My process for image retouching includes a discussion to understand your specific needs, style preferences, intended use, and demographic. Includes enhancements and retouching edited with Adobe Photoshop for print or web use.</td>
+        </tr>
+        <tr>
+          <td class="thick">Vectorization of Artwork</td>
+          <td class="gray">$25/hr</td>
+          <td>My process for vectorization involves converting raster images (such as JPEGs or PNGs) into scalable vector files. I carefully trace the outlines and shapes of the original artwork, ensuring that the vectorized version retains the same
+            visual characteristics and level of detail. This process is particularly useful for logos, illustrations, and graphic prints that need to be resized without losing quality.</td>
+        </tr>
+      </table>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  </div>
+  <!-- Footer -->
+  <div class="footer">
+    <div class="socials">
+      <ul class="icons">
+        <li>
+          <a href="https://carissacancreate.etsy.com" class="fa fa-etsy"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jcarissaj/?hl=en" class="fa fa-instagram"></a>
+        </li>
+        <li>
+          <a href="https://github.com/justcarissa" class="fa fa-github"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/carissajust" class="fa fa-linkedin"></a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.com/carissarjust/_saved/" class="fa fa-pinterest"></a>
+        </li>
+      </ul>
+    </div>
+    <p>2023 Carissa's Creations&copy</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
