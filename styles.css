@@ -33,7 +33,7 @@ header {
   header {
     width: 100%;
     height: 80px;
-    padding: 0px 30px 0px 28px;
+    padding: 0px 20px 0px 18px;
   }
 
   #logo {
@@ -959,7 +959,7 @@ p.thick {
 
 .send-email-button {
   color: #29373b;
-  margin: 10px 20px 20px 0px;
+  margin: 10px 0px 20px 0px;
   font-size: 16px;
   background-color: #feea98;
   font-weight: bold;
@@ -1028,7 +1028,7 @@ p.thick {
 /* Caption */
 /* Enlarge */
 .services-button p {
-  color: rgba(0, 0, 0, 0.4);
+  color: #29373b;
   display: bold;
   border-bottom: none;
   display: inline;
@@ -1145,21 +1145,26 @@ p.thick {
   }
 
   .main-services {
-    padding: 30px;
+    padding: 20px;
     margin-top: 0px;
   }
 
   .main {
-    padding: 30px;
+    padding: 20px;
   }
 
   .main-gallery section {
-    padding: 0px 35px 20px 35px;
+    padding: 0px 20px 20px 20px;
     margin-top: 0px;
   }
 
   .side {
-    padding: 30px;
+    padding: 30px 20px 20px 20px;
+  }
+
+  .side-text {
+    border-left: dotted 3px #29373b;
+    padding-left: 15px;
   }
 
   #services td {
@@ -1213,7 +1218,7 @@ p.thick {
   }
 
   .form-content {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0px;
   }
 }
@@ -1276,7 +1281,7 @@ textarea {
   color: #29373b;
   font-weight: bold;
   font-size: 16px;
-  padding: 20px 20px 10px 20px;
+  padding: 0px 0px 10px 0px;
   border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 0.7px;
