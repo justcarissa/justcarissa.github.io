@@ -1,4 +1,3 @@
-
 // Function to toggle mobile menu
 function toggleMobileMenu(icon) {
   icon.classList.toggle("open");
@@ -49,41 +48,34 @@ document.addEventListener("DOMContentLoaded", function() {
     link.addEventListener('click', closeSubMenu);
   });
 
-
   var allImages = document.querySelectorAll('.first-section-img, .graphicdesign-img, .scrollable-image img, .vertical-scrollable-image img');
 
   allImages.forEach(function(image) {
-    image.addEventListener('click', function() {
-      var imageContainer = event.target.closest('.image-container, .scrollable-image-container .link-wrap');
-      var image = imageContainer.querySelector('img');
-      var caption = imageContainer.querySelector('.caption');
-
-
-
-      modalImg.src = this.src;
-      var caption = this.nextElementSibling;
-      captionText.innerHTML = caption ? caption.innerHTML : '';
-      modal.style.display = "block";
-    });
+    image.addEventListener('click', toggleModal);
   });
 
   var span = document.getElementsByClassName("close")[0];
   span.onclick = function() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
+    // Remove modal-open class from body when modal is closed
+    document.body.classList.remove('modal-open');
   };
 
   function handleScroll() {
-    var headerHeight = document.getElementById('main-header').offsetHeight;
-    var sections = document.querySelector('.sections');
-    var buttonContainer = document.querySelector('.button-container');
+    // Check if body has 'modal-open' class
+    if (!document.body.classList.contains('modal-open')) {
+      var headerHeight = document.getElementById('main-header').offsetHeight;
+      var sections = document.querySelector('.sections');
+      var buttonContainer = document.querySelector('.button-container');
 
-    if (window.pageYOffset > headerHeight + 50) {
-      sections.classList.add('fixed-sections');
-      buttonContainer.classList.add('fixed-button-container');
-    } else {
-      sections.classList.remove('fixed-sections');
-      buttonContainer.classList.remove('fixed-button-container');
+      if (window.pageYOffset > headerHeight + 50) {
+        sections.classList.add('fixed-sections');
+        buttonContainer.classList.add('fixed-button-container');
+      } else {
+        sections.classList.remove('fixed-sections');
+        buttonContainer.classList.remove('fixed-button-container');
+      }
     }
   }
 
@@ -107,11 +99,4 @@ function toggleModal(event) {
   
   // Add modal-open class to body to disable scrolling and clicking
   document.body.classList.add('modal-open');
-
-  var span = document.getElementsByClassName("close")[0];
-  span.onclick = function() {
-    modal.style.display = "none";
-    // Remove modal-open class from body when modal is closed
-    document.body.classList.remove('modal-open');
-  };
 }
