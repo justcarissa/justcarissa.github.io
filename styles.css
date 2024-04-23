@@ -1210,6 +1210,7 @@ p.thick {
   form {
     margin-bottom: 80px;
     padding: 0px;
+    background-color: white;
   }
 
   .main-services table {
