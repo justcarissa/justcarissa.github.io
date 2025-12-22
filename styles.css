@@ -1321,7 +1321,7 @@ textarea {
 }
 
 .socials .fa {
-  margin: 0 10px;
+  margin: 0 20px;
   padding: 10px;
   font-size: 16px;
   text-align: center;
@@ -1331,8 +1331,8 @@ textarea {
   color: #29373b;
 }
 
-.socials .fa facebook {
- padding: 10px 20px 10px 20px;
+.fa facebook {
+ padding: 10px 30px 10px 30px;
 }
 
 .socials .fa:hover {
