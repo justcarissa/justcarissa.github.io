@@ -1331,6 +1331,10 @@ textarea {
   color: #29373b;
 }
 
+.socials .fa facebook {
+ padding: 10px 20px 10px 20px;
+}
+
 .socials .fa:hover {
   background-color: #fbd25e;
 }
